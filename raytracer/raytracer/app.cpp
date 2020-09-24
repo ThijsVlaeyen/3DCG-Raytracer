@@ -107,8 +107,8 @@ int main(int argc, char** argv)
     
     process_command_line_arguments(argc, argv);
 
-    // Renders a basic sample and writes it to a file named "test.wif". You may have to look around a bit to find it, but it will definitely be somewhere in the project's directory structure. You can use an absolute path to avoid having to look for it.
-    demos::demoVlaeyenThijs(pipeline::wif("demoVlaeyenThijs.wif"));
+    //Comment of uncomment dit afhv wat ge wilt dat het doet but don't delete pls thx ~ Sthino
+    //demos::ray_tracer_v1(pipeline::wif("ray-tracer-v1.wif"));
 }
 
 #endif

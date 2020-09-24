@@ -255,6 +255,12 @@
     <ClCompile Include="demos\demoVlaeyenThijs.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="raytracers\ray-tracer-v1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="demos\sample-ray-tracer-v1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="imaging\bitmap.h">
@@ -756,6 +762,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="demos\demoVlaeyenThijs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="raytracers\ray-tracer-v1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="demos\sample-ray-tracer-v1.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

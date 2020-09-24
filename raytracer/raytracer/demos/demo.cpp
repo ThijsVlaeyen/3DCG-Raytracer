@@ -27,7 +27,7 @@ void demos::Demo::render(std::shared_ptr<raytracer::pipeline::Consumer<std::shar
 
 RayTracer demos::Demo::create_ray_tracer()
 {
-    return raytracer::raytracers::v0();
+    return raytracer::raytracers::v1();
 }
 
 Renderer demos::Demo::create_renderer()
