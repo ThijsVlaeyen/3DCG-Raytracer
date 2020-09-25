@@ -23,7 +23,7 @@ namespace raytracer
         }
 
         /// <summary>
-        /// Creates new and improved ray tracer mk1.
+        /// Creates new and improved ray tracer mk2.
         /// </summary>
         RayTracer v2();
     }
