@@ -403,6 +403,7 @@
     <ClCompile Include="primitives\union-primitive.cpp" />
     <ClCompile Include="raytracers\ray-tracer-v0.cpp" />
     <ClCompile Include="raytracers\ray-tracer-v1.cpp" />
+    <ClCompile Include="raytracers\ray-tracer-v2.cpp" />
     <ClCompile Include="renderers\renderer.cpp" />
     <ClCompile Include="renderers\standard-renderer.cpp" />
     <ClCompile Include="lights\light-ray.cpp" />
@@ -515,6 +516,7 @@
     <ClInclude Include="pipeline\wif-consumer.h" />
     <ClInclude Include="pipeline\wif-processor.h" />
     <ClInclude Include="raytracers\ray-tracer-v1.h" />
+    <ClInclude Include="raytracers\ray-tracer-v2.h" />
     <ClInclude Include="raytracers\trace-result.h" />
     <ClInclude Include="easylogging++.h" />
     <ClInclude Include="imaging\bitmap.h" />

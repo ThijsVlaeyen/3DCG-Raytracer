@@ -108,7 +108,7 @@ int main(int argc, char** argv)
     process_command_line_arguments(argc, argv);
 
     //Comment of uncomment dit afhv wat ge wilt dat het doet but don't delete pls thx ~ Sthino
-    //demos::ray_tracer_v1(pipeline::wif("ray-tracer-v1.wif"));
+    //demos::ray_tracer_v1(pipeline::wif("ray-tracer-v2.wif"));
 }
 
 #endif

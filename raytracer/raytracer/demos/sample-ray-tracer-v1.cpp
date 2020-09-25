@@ -31,8 +31,8 @@ namespace
 
             // Define material properties
             MaterialProperties material_properties(
-                colors::red(),      // ambient lighting, not supported yet
-                colors::black(),      // diffuse lighting, not supported yet
+                0.1 * colors::red(),      // ambient lighting, not supported yet
+                0.2 * colors::blue(),      // diffuse lighting, not supported yet
                 colors::black(),      // specular highlights, not supported yet
                 0                     // specular exponent, not supported yet
             );

@@ -16,6 +16,7 @@ namespace
     {
         RayTracer v0() const { return raytracer::raytracers::v0(); }
         RayTracer v1() const { return raytracer::raytracers::v1(); }
+        RayTracer v2() const { return raytracer::raytracers::v2(); }
 
         RayTracer v(int version) const
         {
@@ -24,6 +25,7 @@ namespace
 #           define DISPATCH(N) case N: return v ## N()
                 DISPATCH(0);
                 DISPATCH(1);
+                DISPATCH(2);
 #           undef DISPATCH
 
             default:
@@ -58,6 +60,7 @@ ModulePtr raytracer::scripting::_private_::create_raytracing_module()
 #   define BIND(NAME)   module->add(fun(&RaytracerLibrary::NAME), #NAME)
         BIND(v0);
         BIND(v1);
+        BIND(v2);
         BIND(v);
 #   undef BIND
 
