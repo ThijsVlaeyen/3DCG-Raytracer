@@ -406,6 +406,7 @@
     <ClCompile Include="raytracers\ray-tracer-v2.cpp" />
     <ClCompile Include="raytracers\ray-tracer-v3.cpp" />
     <ClCompile Include="raytracers\ray-tracer-v4.cpp" />
+    <ClCompile Include="raytracers\ray-tracer-v5.cpp" />
     <ClCompile Include="renderers\renderer.cpp" />
     <ClCompile Include="renderers\standard-renderer.cpp" />
     <ClCompile Include="lights\light-ray.cpp" />
@@ -521,6 +522,7 @@
     <ClInclude Include="raytracers\ray-tracer-v2.h" />
     <ClInclude Include="raytracers\ray-tracer-v3.h" />
     <ClInclude Include="raytracers\ray-tracer-v4.h" />
+    <ClInclude Include="raytracers\ray-tracer-v5.h" />
     <ClInclude Include="raytracers\trace-result.h" />
     <ClInclude Include="easylogging++.h" />
     <ClInclude Include="imaging\bitmap.h" />

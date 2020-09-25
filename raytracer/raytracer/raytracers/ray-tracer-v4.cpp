@@ -20,6 +20,7 @@ Color raytracer::raytracers::_private_::RayTracerV4::process_light_ray(const Sce
 	{
 		double t = rayhit.t;
 
+		// t <= 0.99 because t < 1 gave weird black spots this seems to work. It's not perfect but aren't we all?
 		if ((0.00 <= t) && (t <= 0.99))
 		{
 			// Return black if 0 <= t < 1
