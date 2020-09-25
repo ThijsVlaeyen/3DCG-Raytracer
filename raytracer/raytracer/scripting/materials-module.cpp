@@ -46,6 +46,11 @@ namespace
         {
             return raytracer::materials::horizontal_lines(thickness, m1, m2);
         }
+
+        Material vertical_lines(double thickness, Material m1, Material m2) const
+        {
+            return raytracer::materials::vertical_lines(thickness, m1, m2);
+        }
     };
 }
 
@@ -71,6 +76,7 @@ ModulePtr raytracer::scripting::_private_::create_materials_module()
     BIND(uniform);
     BIND_AS(uniform_by_map, uniform);
     BIND(horizontal_lines);
+    BIND(vertical_lines);
 #   undef BIND
 #   undef BIND_AS
 

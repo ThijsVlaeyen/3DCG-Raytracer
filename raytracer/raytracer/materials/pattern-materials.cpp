@@ -25,3 +25,8 @@ Material raytracer::materials::horizontal_lines(double thickness, Material m1, M
 {
     return pattern2d(math::functions::horizontal_lines(thickness), m1, m2);
 }
+
+Material raytracer::materials::vertical_lines(double thickness, Material m1, Material m2)
+{
+    return pattern2d(math::functions::vertical_lines(thickness), m1, m2);
+}

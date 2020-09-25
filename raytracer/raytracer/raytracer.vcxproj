@@ -366,6 +366,7 @@
     <ClCompile Include="math\functions\easing\linear-easing-function.cpp" />
     <ClCompile Include="math\functions\easing\stretch-easing-function.cpp" />
     <ClCompile Include="math\functions\horizontal-lines-pattern.cpp" />
+    <ClCompile Include="math\functions\vertical-lines-pattern.cpp" />
     <ClCompile Include="math\plane.cpp" />
     <ClCompile Include="math\quantize.cpp" />
     <ClCompile Include="math\transformation-matrices.cpp" />
@@ -499,6 +500,7 @@
     <ClInclude Include="math\functions\easing\stretch-easing-function.h" />
     <ClInclude Include="math\functions\horizontal-lines-pattern.h" />
     <ClInclude Include="math\functions\identity.h" />
+    <ClInclude Include="math\functions\vertical-lines-pattern.h" />
     <ClInclude Include="math\plane.h" />
     <ClInclude Include="math\quantize.h" />
     <ClInclude Include="math\transformation-matrices.h" />

@@ -33,7 +33,7 @@ imaging::Color raytracer::raytracers::_private_::RayTracerV5::trace(const Scene&
 	// Just return black if weight is too small
 	Color result = colors::black();
 
-	// Checking the weight for the infinit recursions!
+	// Checking the weight for the infinite recursions! Might change the weight in the future is performance is too bad.
 	if (weight > 0.01)
 	{
 		Hit hit;
