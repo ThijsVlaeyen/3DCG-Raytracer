@@ -1,23 +1,23 @@
 {
-    "github-url": "TODO",
+    "github-url": "https://github.com/ucll-3dcg-2021/ray-tracer-noah",
     "team-members": [
         {
-            "first-name": "TODO",
-            "last-name": "TODO",
-            "student-id": "TODO",
-            "is-done": "TODO"
+            "first-name": "Thijs",
+            "last-name": "Vlaeyen",
+            "student-id": "R0747344",
+            "is-done": "no"
         },
         {
-            "first-name": "TODO",
-            "last-name": "TODO",
-            "student-id": "TODO",
-            "is-done": "TODO"
+            "first-name": "Noa",
+            "last-name": "Andries",
+            "student-id": "R0748973",
+            "is-done": "no"
         },
         {
-            "first-name": "TODO",
-            "last-name": "TODO",
-            "student-id": "TODO",
-            "is-done": "TODO"
+            "first-name": "Kasper",
+            "last-name": "Vanderhulst",
+            "student-id": "R0749062",
+            "is-done": "no"
         }
     ]
 }

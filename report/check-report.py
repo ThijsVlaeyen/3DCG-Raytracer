@@ -157,6 +157,6 @@ for team_member in report_data['team-members']:
     check_by_regex('student-id', r'[sruSRU]\d{7}', team_member)
     check_by_regex('is-done', r'yes|no', team_member)
 
-check_by_regex('github-url', f'https://github.com/ucll-3dcg-1920/3dcg-raytracer-1920-.*')
+check_by_regex('github-url', f'https://github.com/ucll-3dcg-2021/ray-tracer-.*')
 print('')
 success()
