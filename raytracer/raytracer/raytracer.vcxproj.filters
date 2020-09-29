@@ -276,6 +276,9 @@
     <ClCompile Include="math\functions\vertical-lines-pattern.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="demos\demoVanderhulstKasper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="imaging\bitmap.h">
@@ -798,6 +801,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="math\functions\vertical-lines-pattern.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="demos\demoVanderhulstKasper.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
