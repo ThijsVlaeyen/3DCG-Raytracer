@@ -41,6 +41,7 @@ ModulePtr raytracer::scripting::_private_::create_primitives_module()
     // Bypasses helper functions and directly binds to a function from raytracer::primitives
 #   define BIND_DIRECTLY(NAME)                         BIND_HELPER_FUNCTION_AS(raytracer::primitives::NAME, NAME)
     BIND_DIRECTLY(sphere);
+    BIND_DIRECTLY(triangle);
     BIND_DIRECTLY(xy_plane);
     BIND_DIRECTLY(xz_plane);
     BIND_DIRECTLY(yz_plane);
