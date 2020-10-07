@@ -1,27 +1,41 @@
-team_member 'Nick' do
+team_member 'ThijsVlaeyen' do
   extension BasicSample
   extension BasicScripting
 
   extension RayTracerV1
   extension RayTracerV2
   extension RayTracerV3
-
-  extension PrimitiveRotationX
-end
-
-team_member 'Kurt' do
-  extension BasicSample
-  extension BasicScripting
-
   extension RayTracerV4
   extension RayTracerV5
+  extension RayTracerV6
+  
+  extension MaterialVerticalLines
+  
+  extension PlaneXZ
+  
+  extension Triangle
+  extension BoundingBox
+  
+  extension PrimitiveRotationY
+  
+  extension PointAnimation
+
 end
 
-team_member 'Dale' do
+team_member 'Kasper' do
   extension BasicSample
   extension BasicScripting
+  extension RayTracerV1
+  
+  extension PlaneYZ
+  
+  extension AngleAnimation
 
-  extension RayTracerV6
+end
+
+team_member 'NoaH' do
+
+  
 end
 
 
