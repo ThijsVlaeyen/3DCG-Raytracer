@@ -378,6 +378,7 @@
     <ClCompile Include="pipeline\text-writer-consumer.cpp" />
     <ClCompile Include="pipeline\wif-consumer.cpp" />
     <ClCompile Include="pipeline\wif-processor.cpp" />
+    <ClCompile Include="primitives\bounding-box-primitive.cpp" />
     <ClCompile Include="primitives\primitive.cpp" />
     <ClCompile Include="imaging\color-mapper.cpp" />
     <ClCompile Include="lights\omnidirectional-point-light.cpp" />
@@ -524,6 +525,7 @@
     <ClInclude Include="pipeline\text-writer-consumer.h" />
     <ClInclude Include="pipeline\wif-consumer.h" />
     <ClInclude Include="pipeline\wif-processor.h" />
+    <ClInclude Include="primitives\bounding-box-primitive.h" />
     <ClInclude Include="primitives\triangle-primitive.h" />
     <ClInclude Include="raytracers\ray-tracer-v1.h" />
     <ClInclude Include="raytracers\ray-tracer-v2.h" />
