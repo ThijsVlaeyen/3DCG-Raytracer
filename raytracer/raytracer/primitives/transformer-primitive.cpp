@@ -95,3 +95,8 @@ Primitive raytracer::primitives::translate(const Vector3D& v, Primitive transfor
 {
     return transform(math::transformations::translation(v), transformee);
 }
+
+Primitive raytracer::primitives::rotate_around_y(Angle a, Primitive transformee)
+{
+    return transform(math::transformations::rotate_y(a), transformee);
+}
