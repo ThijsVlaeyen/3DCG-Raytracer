@@ -351,6 +351,7 @@
     <ClCompile Include="demos\demoVanderhulstKasper.cpp" />
     <ClCompile Include="demos\demoVlaeyenThijs.cpp" />
     <ClCompile Include="demos\sample-ray-tracer-v1.cpp" />
+    <ClCompile Include="lights\spot-light.cpp" />
     <ClCompile Include="math\angle.cpp" />
     <ClCompile Include="animation\animation.cpp" />
     <ClCompile Include="animation\duration.cpp" />
@@ -488,6 +489,7 @@
     <ClInclude Include="demos\demoVanderhulstKasper.h" />
     <ClInclude Include="demos\demoVlaeyenThijs.h" />
     <ClInclude Include="demos\sample-ray-tracer-v1.h" />
+    <ClInclude Include="lights\spot-light.h" />
     <ClInclude Include="materials\composition-material.h" />
     <ClInclude Include="imaging\bitmap-function.h" />
     <ClInclude Include="cameras\camera.h" />

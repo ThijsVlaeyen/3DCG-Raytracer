@@ -9,6 +9,8 @@ team_member 'ThijsVlaeyen' do
   extension RayTracerV5
   extension RayTracerV6
   
+  extension SpotLight
+  
   extension MaterialVerticalLines
   
   extension PlaneXZ
