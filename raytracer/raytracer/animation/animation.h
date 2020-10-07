@@ -89,4 +89,5 @@ namespace animation
 
     Animation<double> basic(double, double, const Duration&);
     Animation<math::Angle> angle(math::Angle, math::Angle, const Duration&);
+    Animation<math::Point3D> point3d(math::Point3D, math::Point3D, const Duration&);
 }

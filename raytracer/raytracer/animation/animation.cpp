@@ -30,3 +30,16 @@ Animation<Angle> animation::angle(Angle from, Angle to, const Duration& duration
 
 	return make_animation(from_lambda(lambda), duration);
 }
+
+Animation<Point3D> animation::point3d(Point3D from, Point3D to, const Duration& duration)
+{
+	auto position_interval = interval(from, to);
+	auto time_interval = interval(TimeStamp::zero(), TimeStamp::from_epoch(duration));
+
+	std::function<Point3D(TimeStamp)> lambda = [position_interval, time_interval](TimeStamp now) -> Point3D {
+		double t = time_interval.to_relative(now);
+		return position_interval.from_relative(t);
+	};
+
+	return make_animation(from_lambda(lambda), duration);
+}
