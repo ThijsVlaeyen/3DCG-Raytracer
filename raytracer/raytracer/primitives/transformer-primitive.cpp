@@ -100,3 +100,8 @@ Primitive raytracer::primitives::rotate_around_y(Angle a, Primitive transformee)
 {
     return transform(math::transformations::rotate_y(a), transformee);
 }
+
+Primitive raytracer::primitives::rotate_around_x(Angle a, Primitive transformee)
+{
+    return transform(math::transformations::rotate_x(a), transformee);
+}

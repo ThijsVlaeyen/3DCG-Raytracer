@@ -30,6 +30,7 @@ team_member 'Kasper' do
   extension RayTracerV1
   
   extension PlaneYZ
+  extension SquareXY
   
   extension AngleAnimation
 
