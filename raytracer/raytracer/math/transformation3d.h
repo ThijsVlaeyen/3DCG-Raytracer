@@ -22,5 +22,6 @@ namespace math
     {
         Transformation3D translation(const Vector3D&);
         Transformation3D rotate_y(Angle);
+        Transformation3D rotate_x(Angle);
     }
 }
