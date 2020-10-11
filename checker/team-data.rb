@@ -14,10 +14,10 @@ team_member 'ThijsVlaeyen' do
   extension MaterialVerticalLines
   
   extension PlaneXZ
-  
+  extension SquareXZ
+  extension SquareXZOptimized
   extension Triangle
   extension BoundingBox
-  
   extension PrimitiveRotationY
   
   extension PointAnimation
