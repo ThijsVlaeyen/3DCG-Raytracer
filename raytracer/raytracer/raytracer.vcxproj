@@ -403,6 +403,7 @@
     <ClCompile Include="primitives\decorator-primitive.cpp" />
     <ClCompile Include="primitives\sphere-primitive.cpp" />
     <ClCompile Include="math\rectangle2d.cpp" />
+    <ClCompile Include="primitives\square-primitive.cpp" />
     <ClCompile Include="primitives\transformer-primitive.cpp" />
     <ClCompile Include="primitives\triangle-primitive.cpp" />
     <ClCompile Include="primitives\union-primitive.cpp" />
