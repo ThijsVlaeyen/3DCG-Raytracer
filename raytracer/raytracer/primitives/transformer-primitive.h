@@ -11,5 +11,6 @@ namespace raytracer
         Primitive transform(const math::Transformation3D&, Primitive);
         Primitive translate(const math::Vector3D&, Primitive);
         Primitive rotate_around_y(math::Angle, Primitive);
+        Primitive rotate_around_x(math::Angle, Primitive);
     }
 }
