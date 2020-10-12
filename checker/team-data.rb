@@ -20,6 +20,7 @@ team_member 'ThijsVlaeyen' do
   extension BoundingBox
   extension PrimitiveRotationY
   
+  extension EasingLibrary
   extension PointAnimation
 
 end
