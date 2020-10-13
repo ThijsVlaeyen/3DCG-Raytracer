@@ -1,0 +1,41 @@
+def scene_at(now)
+{
+  var camera = Cameras.perspective( [ "eye": pos(2, 2, 4),
+                                      "look_at": pos(0,0,0) ] )
+
+  var square_material = Materials.uniform( [ "ambient": Colors.white() * 0.1,
+                                             "diffuse": Colors.white() * 0.8,
+                                             "specular": Colors.white() * 0.5,
+                                             "specular_exponent": 10,
+                                             "reflectivity": 0.5] )
+
+  var white = Materials.uniform( [ "ambient": Colors.white() * 0.1,
+                                   "diffuse": Colors.white() * 0.8 ] )
+  var black = Materials.uniform( [ "ambient": Colors.white() * 0.1,
+                                   "diffuse": Colors.black() * 0.8 ] )
+
+  var plane_material = Materials.vertical_lines(0.5, white, black )
+
+  var angle = Animations.animate(degrees(0), degrees(360), seconds(5))
+  var linear = Animations.ease(angle, Easing.quadratic_out())
+  var root = union( [ decorate(square_material, rotate_around_y(linear[now], xy_square())),
+                      decorate(plane_material, translate(vec(0,-2,0), xz_plane())) ] )
+
+  var lights = [ Lights.omnidirectional( pos(5,5,5), Colors.white() ) ]
+
+  create_scene(camera, root, lights)
+}
+
+var raytracer = Raytracers.v6()
+
+var renderer = Renderers.standard( [ "width": 500,
+                                     "height": 500,
+                                     "sampler": Samplers.single(),
+                                     "ray_tracer": raytracer ] )
+
+pipeline( scene_animation(scene_at, seconds(5)),
+          [ Pipeline.animation(30),
+            Pipeline.renderer(renderer),
+            Pipeline.wif(),
+            Pipeline.base64(),
+            Pipeline.stdout() ] )

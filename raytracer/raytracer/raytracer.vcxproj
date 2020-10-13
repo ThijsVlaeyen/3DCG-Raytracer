@@ -366,6 +366,7 @@
     <ClCompile Include="materials\material-properties.cpp" />
     <ClCompile Include="materials\pattern-materials.cpp" />
     <ClCompile Include="math\functions\easing\linear-easing-function.cpp" />
+    <ClCompile Include="math\functions\easing\quadratic-function.cpp" />
     <ClCompile Include="math\functions\easing\stretch-easing-function.cpp" />
     <ClCompile Include="math\functions\horizontal-lines-pattern.cpp" />
     <ClCompile Include="math\functions\vertical-lines-pattern.cpp" />
@@ -505,6 +506,7 @@
     <ClInclude Include="math\functions\constant.h" />
     <ClInclude Include="math\functions\easing-function.h" />
     <ClInclude Include="math\functions\easing\linear-easing-function.h" />
+    <ClInclude Include="math\functions\easing\quadratic-function.h" />
     <ClInclude Include="math\functions\easing\stretch-easing-function.h" />
     <ClInclude Include="math\functions\horizontal-lines-pattern.h" />
     <ClInclude Include="math\functions\identity.h" />

@@ -77,6 +77,9 @@ namespace
     struct EasingLibrary
     {
         EasingFunction linear() const { return math::functions::easing::linear(); }
+        EasingFunction quadratic_in() const { return math::functions::easing::quadratic_in(); }
+        EasingFunction quadratic_out() const { return math::functions::easing::quadratic_out(); }
+        EasingFunction quadratic_inout() const { return math::functions::easing::quadratic_inout(); }
     };
 
     void add_points_and_vectors(Module& module)
@@ -185,8 +188,10 @@ namespace
         module.add_global_const(chaiscript::const_var(easing_library), "Easing");
 
         # define BIND(NAME)  module.add(fun(&EasingLibrary::NAME), #NAME)
-        BIND(linear);
-
+            BIND(linear);
+            BIND(quadratic_in);
+            BIND(quadratic_out);
+            BIND(quadratic_inout);
         # undef BIND
     }
 }

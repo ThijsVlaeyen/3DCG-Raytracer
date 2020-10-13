@@ -21,6 +21,7 @@ team_member 'ThijsVlaeyen' do
   extension PrimitiveRotationY
   
   extension EasingLibrary
+  extension Quadratic
   extension PointAnimation
 
 end
