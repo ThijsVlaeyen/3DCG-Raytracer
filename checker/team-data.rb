@@ -30,11 +30,14 @@ team_member 'Kasper' do
   extension BasicSample
   extension BasicScripting
   extension RayTracerV1
-  
+
+  extension PrimitiveRotationX
   extension PlaneYZ
   extension SquareXY
   
   extension AngleAnimation
+  extension MaterialGrid2d
+  extension MaterialTranslate2D
 
 
 end

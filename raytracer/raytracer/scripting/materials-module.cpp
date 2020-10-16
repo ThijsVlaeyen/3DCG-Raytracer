@@ -56,6 +56,11 @@ namespace
         {
             return raytracer::materials::grid2d(thickness, m1, m2);
         }
+
+        Material translate(math::Vector2D& v, Material m) const
+        {
+            return raytracer::materials::translation(v, m); 
+        }
     };
 }
 
