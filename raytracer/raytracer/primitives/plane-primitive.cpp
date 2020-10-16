@@ -106,7 +106,7 @@ namespace
             hit->t = t;
             hit->position = ray.at(hit->t);
             hit->local_position.xyz = hit->position;
-            hit->local_position.uv = Point2D(hit->position.x(), hit->position.y());
+            hit->local_position.uv = Point2D(hit->position.x(), hit->position.z());
             hit->normal = ray.origin.y() > 0 ? m_normal : -m_normal;
         }
     };
@@ -131,7 +131,7 @@ namespace
             hit->t = t;
             hit->position = ray.at(hit->t);
             hit->local_position.xyz = hit->position;
-            hit->local_position.uv = Point2D(hit->position.x(), hit->position.y());
+            hit->local_position.uv = Point2D(hit->position.y(), hit->position.z());
             hit->normal = ray.origin.x() > 0 ? m_normal : -m_normal;
         }
     };

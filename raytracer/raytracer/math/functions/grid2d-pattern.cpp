@@ -10,9 +10,7 @@ Function<bool(const Point2D&)> math::functions::grid2d(double thickness)
 	{
 		auto y = p.y();
 		auto x = p.x();
-		return std::abs(y - round(y)) < thickness / 2;
-		//return std::abs(x - round(x)) < thickness / 2;
-
+		return std::abs(y - round(y)) < thickness / 2 || std::abs(x - round(x)) < thickness / 2;
 	};
 	return from_lambda<bool, const Point2D&>(function);
 }
