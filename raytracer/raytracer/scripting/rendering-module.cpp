@@ -6,6 +6,7 @@
 #include "raytracers/ray-tracer.h"
 #include "samplers/samplers.h"
 #include "imaging/wif-format.h"
+#include "imaging/ppm-format.h"
 #include "tasks/task-schedulers.h"
 
 using namespace chaiscript;

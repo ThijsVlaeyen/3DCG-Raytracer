@@ -183,6 +183,11 @@ namespace
         {
             return wrap(pipeline::text_writer(std::cout));
         }
+
+        std::shared_ptr<Wrapper> ppm() const
+        {
+            return wrap(pipeline::ppm());
+        }
     };
 
     void pipeline_builder(Boxed_Value initial, const std::vector<Boxed_Value>& pipeline_segments)
@@ -230,6 +235,7 @@ ModulePtr raytracer::scripting::_private_::create_pipeline_module()
     BIND(null_bitmap_consumer);
     BIND(base64);
     BIND(stdout);
+    BIND(ppm);
 #   undef BIND_AS
 #   undef BIND
 

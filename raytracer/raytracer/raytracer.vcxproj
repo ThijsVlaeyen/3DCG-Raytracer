@@ -351,6 +351,7 @@
     <ClCompile Include="demos\demoVanderhulstKasper.cpp" />
     <ClCompile Include="demos\demoVlaeyenThijs.cpp" />
     <ClCompile Include="demos\sample-ray-tracer-v1.cpp" />
+    <ClCompile Include="imaging\ppm-format.cpp" />
     <ClCompile Include="lights\spot-light.cpp" />
     <ClCompile Include="materials\material2d-transformer.cpp" />
     <ClCompile Include="math\angle.cpp" />
@@ -378,6 +379,7 @@
     <ClCompile Include="performance\performance.cpp" />
     <ClCompile Include="pipeline\animation-processor.cpp" />
     <ClCompile Include="pipeline\base64-processor.cpp" />
+    <ClCompile Include="pipeline\ppm-consumer.cpp" />
     <ClCompile Include="pipeline\renderer-processor.cpp" />
     <ClCompile Include="pipeline\text-writer-consumer.cpp" />
     <ClCompile Include="pipeline\wif-consumer.cpp" />
@@ -493,6 +495,7 @@
     <ClInclude Include="demos\demoVanderhulstKasper.h" />
     <ClInclude Include="demos\demoVlaeyenThijs.h" />
     <ClInclude Include="demos\sample-ray-tracer-v1.h" />
+    <ClInclude Include="imaging\ppm-format.h" />
     <ClInclude Include="lights\spot-light.h" />
     <ClInclude Include="materials\composition-material.h" />
     <ClInclude Include="imaging\bitmap-function.h" />
@@ -528,6 +531,7 @@
     <ClInclude Include="pipeline\pipeline-builder.h" />
     <ClInclude Include="pipeline\pipeline.h" />
     <ClInclude Include="pipeline\pipelines.h" />
+    <ClInclude Include="pipeline\ppm-consumer.h" />
     <ClInclude Include="pipeline\processor.h" />
     <ClInclude Include="pipeline\producer.h" />
     <ClInclude Include="pipeline\renderer-processor.h" />

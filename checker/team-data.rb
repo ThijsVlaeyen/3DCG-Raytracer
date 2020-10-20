@@ -37,7 +37,10 @@ team_member 'Kasper' do
   
   extension AngleAnimation
   extension MaterialGrid2d
+
+  extension MaterialTransformer2D
   extension MaterialTranslate2D
+  extension Ppm
 
 
 end
