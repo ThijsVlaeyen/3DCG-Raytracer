@@ -1,47 +1,57 @@
 team_member 'ThijsVlaeyen' do
+  #Lvl 1
   extension BasicSample
   extension BasicScripting
-
   extension RayTracerV1
-  extension RayTracerV2
-  extension RayTracerV3
-  extension RayTracerV4
-  extension RayTracerV5
-  extension RayTracerV6
-  
-  extension SpotLight
-  
-  extension MaterialVerticalLines
-  
   extension PlaneXZ
   extension SquareXZ
   extension SquareXZOptimized
+  extension PrimitiveRotationY
+
+  #Lvl 2
+  extension RayTracerV2
+  extension RayTracerV3
+  extension RayTracerV4
+  extension MaterialVerticalLines
   extension Triangle
   extension BoundingBox
-  extension PrimitiveRotationY
-  
   extension EasingLibrary
-  extension Quadratic
   extension PointAnimation
+
+  #Lvl 3
+  extension RayTracerV5
+  extension SpotLight
+  extension Quadratic
+
+  #Lvl 4
+  extension RayTracerV6
+
+  #Lvl 5
 
 end
 
 team_member 'Kasper' do
+  #Lvl 1
   extension BasicSample
   extension BasicScripting
   extension RayTracerV1
-
-  extension PrimitiveRotationX
-  extension PlaneYZ
   extension SquareXY
-  
+  extension PlaneYZ
+  extension PrimitiveRotationX
+
+  #Lvl 2
   extension AngleAnimation
   extension MaterialGrid2d
-
+  extension RandomSampler
+  
+  #Lvl 3
+  extension Ppm
   extension MaterialTransformer2D
   extension MaterialTranslate2D
-  extension Ppm
-
+  
+  #Lvl 4
+  
+  #Lvl 5
 
 end
 

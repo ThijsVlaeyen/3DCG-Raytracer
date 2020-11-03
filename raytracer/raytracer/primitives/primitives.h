@@ -3,6 +3,7 @@
 #include "primitives/plane-primitive.h"
 #include "primitives/sphere-primitive.h"
 #include "primitives/union-primitive.h"
+#include "primitives/intersect-primitive.h"
 #include "primitives/decorator-primitive.h"
 #include "primitives/transformer-primitive.h"
 #include "primitives/triangle-primitive.h"
