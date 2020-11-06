@@ -27,3 +27,10 @@ Transformation3D math::transformations::rotate_x(Angle a)
 	Matrix4x4 itm = transformation_matrices::rotation_around_x(-a);
 	return Transformation3D(tm, itm);
 }
+
+Transformation3D math::transformations::rotate_z(Angle a)
+{
+	Matrix4x4 tm = transformation_matrices::rotation_around_z(a);
+	Matrix4x4 itm = transformation_matrices::rotation_around_z(-a);
+	return Transformation3D(tm, itm);
+}

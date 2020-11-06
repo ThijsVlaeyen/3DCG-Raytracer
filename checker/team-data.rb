@@ -61,6 +61,7 @@ team_member 'Noa' do
   extension BasicScripting
   extension RayTracerV1
   extension SquareYZ
+  extension PrimitiveRotationZ
   #Lvl 2
   
   #Lvl 3
