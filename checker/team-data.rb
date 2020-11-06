@@ -55,8 +55,18 @@ team_member 'Kasper' do
 
 end
 
-team_member 'NoaH' do
-
+team_member 'Noa' do
+  #Lvl 1
+  extension BasicSample
+  extension BasicScripting
+  extension RayTracerV1
+  #Lvl 2
+  
+  #Lvl 3
+  
+  #Lvl 4
+  
+  #Lvl 5
   
 end
 
