@@ -348,6 +348,7 @@
   <ItemGroup>
     <ClCompile Include="demos\basic-sample.cpp" />
     <ClCompile Include="demos\demo.cpp" />
+    <ClCompile Include="demos\demoAndriesNoa.cpp" />
     <ClCompile Include="demos\demoVanderhulstKasper.cpp" />
     <ClCompile Include="demos\demoVlaeyenThijs.cpp" />
     <ClCompile Include="demos\sample-ray-tracer-v1.cpp" />
@@ -493,6 +494,7 @@
     <ClInclude Include="demos\basic-sample.h" />
     <ClInclude Include="command-line-parser.h" />
     <ClInclude Include="demos\demo.h" />
+    <ClInclude Include="demos\demoAndriesNoa.h" />
     <ClInclude Include="demos\demos.h" />
     <ClInclude Include="demos\demoVanderhulstKasper.h" />
     <ClInclude Include="demos\demoVlaeyenThijs.h" />

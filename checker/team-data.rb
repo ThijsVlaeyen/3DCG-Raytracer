@@ -60,6 +60,7 @@ team_member 'Noa' do
   extension BasicSample
   extension BasicScripting
   extension RayTracerV1
+  extension SquareYZ
   #Lvl 2
   
   #Lvl 3
