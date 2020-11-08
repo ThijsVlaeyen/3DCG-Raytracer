@@ -69,7 +69,8 @@ team_member 'Noa' do
   extension MaterialTransformer3D
   extension MaterialTranslate3D
   #Lvl 4
-  
+  extension Intersection
+  extension FisheyeCamera
   #Lvl 5
   
 end
@@ -94,7 +95,7 @@ end
 # extension NRooksSampler
 # extension MultijitteredSampler
 # extension DepthOfFieldCamera
-# extension FisheyeCamera
+
 # extension OrthographicCamera
 # extension DirectionalLight
 # extension SpotLight
@@ -153,7 +154,7 @@ end
 # extension Cropper
 # extension CropperOptimized
 # extension Bumpifier
-# extension Intersection
+
 # extension IntersectionOptimized
 # extension Difference
 # extension DifferenceOptimized
