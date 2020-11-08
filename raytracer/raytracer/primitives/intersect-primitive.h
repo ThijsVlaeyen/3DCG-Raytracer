@@ -1,7 +1,6 @@
 #pragma once
 
 #include "primitives/primitive.h"
-#include <vector>
 #include <memory>
 
 
@@ -9,6 +8,6 @@ namespace raytracer
 {
 	namespace primitives
 	{
-		Primitive make_intersect(std::vector<Primitive>&);
+		Primitive make_intersect(Primitive child1, Primitive child2);
 	}
 }
