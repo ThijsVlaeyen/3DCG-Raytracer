@@ -67,7 +67,7 @@ team_member 'Noa' do
   #Lvl 3
   
   #Lvl 4
-  
+  extension ParallelScheduler
   #Lvl 5
   
 end
@@ -162,7 +162,7 @@ end
 # extension Group
 # extension Edge
 # extension Cartoon
-# extension ParallelScheduler
+# 
 # extension MotionBlur
 # extension Bmp
 # extension Ppm
