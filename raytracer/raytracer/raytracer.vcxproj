@@ -346,6 +346,7 @@
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="cameras\fisheye-camera.cpp" />
     <ClCompile Include="demos\basic-sample.cpp" />
     <ClCompile Include="demos\demo.cpp" />
     <ClCompile Include="demos\demoAndriesNoa.cpp" />
@@ -456,6 +457,7 @@
     <ClInclude Include="animation\ease-animation.h" />
     <ClInclude Include="animation\interval-animation.h" />
     <ClInclude Include="animation\time-stamp.h" />
+    <ClInclude Include="cameras\fisheye-camera.h" />
     <ClInclude Include="chaiscript\chaiscript.hpp" />
     <ClInclude Include="chaiscript\chaiscript_defines.hpp" />
     <ClInclude Include="chaiscript\chaiscript_stdlib.hpp" />

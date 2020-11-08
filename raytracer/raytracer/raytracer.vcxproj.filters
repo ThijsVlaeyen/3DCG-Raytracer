@@ -324,6 +324,9 @@
     <ClCompile Include="materials\material3d-transformer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="cameras\fisheye-camera.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="imaging\bitmap.h">
@@ -891,6 +894,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="materials\material3d-transformer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cameras\fisheye-camera.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
