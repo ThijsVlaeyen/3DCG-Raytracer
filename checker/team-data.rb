@@ -66,6 +66,8 @@ team_member 'Noa' do
   
   #Lvl 3
   extension ParallelScheduler
+  extension MaterialTransformer3D
+  extension MaterialTranslate3D
   #Lvl 4
   
   #Lvl 5
