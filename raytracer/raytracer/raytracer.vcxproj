@@ -355,6 +355,7 @@
     <ClCompile Include="imaging\ppm-format.cpp" />
     <ClCompile Include="lights\spot-light.cpp" />
     <ClCompile Include="materials\material2d-transformer.cpp" />
+    <ClCompile Include="materials\material3d-transformer.cpp" />
     <ClCompile Include="math\angle.cpp" />
     <ClCompile Include="animation\animation.cpp" />
     <ClCompile Include="animation\duration.cpp" />
@@ -512,6 +513,7 @@
     <ClInclude Include="data-structures\grid.h" />
     <ClInclude Include="imaging\bmp-format.h" />
     <ClInclude Include="materials\material2d-transformer.h" />
+    <ClInclude Include="materials\material3d-transformer.h" />
     <ClInclude Include="materials\pattern-materials.h" />
     <ClInclude Include="math\coordinate-systems.h" />
     <ClInclude Include="math\functions\constant.h" />
