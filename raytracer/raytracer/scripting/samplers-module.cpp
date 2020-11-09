@@ -33,6 +33,10 @@ namespace
         {
             return samplers::half_jittered(rows, cols);
         }
+        Sampler n_rooks(const int& rooks) const
+        {
+            return samplers::n_rooks(rooks);
+        }
     };
 }
 
@@ -51,6 +55,7 @@ ModulePtr raytracer::scripting::_private_::create_samplers_module()
     BIND(stratified);
     BIND(jittered);
     BIND(half_jittered);
+    BIND(n_rooks);
 #   undef BIND
 
     return module;
