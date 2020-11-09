@@ -63,11 +63,17 @@ team_member 'Noa' do
   extension SquareYZ
   extension PrimitiveRotationZ
   #Lvl 2
-  
+  extension StratifiedSampler
+  extension JitteredSampler
+  extension HalfJitteredSampler
+  extension CylinderAlongY
   #Lvl 3
   extension ParallelScheduler
   extension MaterialTransformer3D
   extension MaterialTranslate3D
+  extension NRooksSampler
+  extension MultijitteredSampler
+  extension ConeAlongY
   #Lvl 4
   extension Intersection
   extension FisheyeCamera
