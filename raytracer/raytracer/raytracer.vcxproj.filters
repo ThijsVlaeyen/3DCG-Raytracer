@@ -333,6 +333,9 @@
     <ClCompile Include="samplers\jittered-sampler.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="samplers\half-jittered-sampler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="imaging\bitmap.h">
@@ -909,6 +912,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="samplers\jittered-sampler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="samplers\half-jittered-sampler.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
