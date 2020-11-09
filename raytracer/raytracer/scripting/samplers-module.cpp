@@ -17,10 +17,13 @@ namespace
         {
             return samplers::single();
         }
-
         Sampler random(int count) const
         {
             return samplers::random(count);
+        }
+        Sampler stratified(const int& rows, const int& cols) const
+        {
+            return samplers::stratified(rows, cols);
         }
     };
 }
@@ -37,6 +40,7 @@ ModulePtr raytracer::scripting::_private_::create_samplers_module()
 #   define BIND(NAME)  module->add(fun(&SamplerLibrary::NAME), #NAME)
     BIND(single);
     BIND(random);
+    BIND(stratified);
 #   undef BIND
 
     return module;
