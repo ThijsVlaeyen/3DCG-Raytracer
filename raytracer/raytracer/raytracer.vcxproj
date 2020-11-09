@@ -426,9 +426,11 @@
     <ClCompile Include="renderers\renderer.cpp" />
     <ClCompile Include="renderers\standard-renderer.cpp" />
     <ClCompile Include="lights\light-ray.cpp" />
+    <ClCompile Include="samplers\jittered-sampler.cpp" />
     <ClCompile Include="samplers\random-sampler.cpp" />
     <ClCompile Include="samplers\sampler.cpp" />
     <ClCompile Include="samplers\single-sampler.cpp" />
+    <ClCompile Include="samplers\stratified-sampler.cpp" />
     <ClCompile Include="scripting\animation-module.cpp" />
     <ClCompile Include="scripting\cameras-module.cpp" />
     <ClCompile Include="scripting\imaging-module.cpp" />
@@ -607,11 +609,13 @@
     <ClInclude Include="renderers\renderers.h" />
     <ClInclude Include="renderers\standard-renderer.h" />
     <ClInclude Include="lights\light-ray.h" />
+    <ClInclude Include="samplers\jittered-sampler.h" />
     <ClInclude Include="samplers\random-sampler.h" />
     <ClInclude Include="samplers\sampler.h" />
     <ClInclude Include="samplers\samplers.h" />
     <ClInclude Include="samplers\single-sampler.h" />
     <ClInclude Include="data-structures\array.h" />
+    <ClInclude Include="samplers\stratified-sampler.h" />
     <ClInclude Include="scripting\animation-module.h" />
     <ClInclude Include="scripting\cameras-module.h" />
     <ClInclude Include="scripting\imaging-module.h" />

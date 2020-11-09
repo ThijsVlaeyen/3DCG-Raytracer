@@ -25,6 +25,10 @@ namespace
         {
             return samplers::stratified(rows, cols);
         }
+        Sampler jittered(const int& rows, const int& cols) const
+        {
+            return samplers::jittered(rows, cols);
+        }
     };
 }
 
@@ -41,6 +45,7 @@ ModulePtr raytracer::scripting::_private_::create_samplers_module()
     BIND(single);
     BIND(random);
     BIND(stratified);
+    BIND(jittered);
 #   undef BIND
 
     return module;

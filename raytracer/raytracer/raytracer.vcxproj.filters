@@ -327,6 +327,12 @@
     <ClCompile Include="cameras\fisheye-camera.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="samplers\stratified-sampler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="samplers\jittered-sampler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="imaging\bitmap.h">
@@ -897,6 +903,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="cameras\fisheye-camera.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="samplers\stratified-sampler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="samplers\jittered-sampler.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
