@@ -428,6 +428,7 @@
     <ClCompile Include="lights\light-ray.cpp" />
     <ClCompile Include="samplers\half-jittered-sampler.cpp" />
     <ClCompile Include="samplers\jittered-sampler.cpp" />
+    <ClCompile Include="samplers\multi-jittered-sampler.cpp" />
     <ClCompile Include="samplers\n-rooks-sampler.cpp" />
     <ClCompile Include="samplers\random-sampler.cpp" />
     <ClCompile Include="samplers\sampler.cpp" />
@@ -613,6 +614,7 @@
     <ClInclude Include="lights\light-ray.h" />
     <ClInclude Include="samplers\half-jittered-sampler.h" />
     <ClInclude Include="samplers\jittered-sampler.h" />
+    <ClInclude Include="samplers\multi-jittered-sampler.h" />
     <ClInclude Include="samplers\n-rooks-sampler.h" />
     <ClInclude Include="samplers\random-sampler.h" />
     <ClInclude Include="samplers\sampler.h" />
