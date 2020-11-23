@@ -9,3 +9,4 @@
 #include "primitives/triangle-primitive.h"
 #include "primitives/bounding-box-primitive.h"
 #include "primitives/square-primitive.h"
+#include "primitives/cylinder-primitive.h"
