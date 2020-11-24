@@ -342,7 +342,11 @@
     <ClCompile Include="samplers\multi-jittered-sampler.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+<<<<<<< HEAD
     <ClCompile Include="primitives\difference-primitive.cpp">
+=======
+    <ClCompile Include="primitives\cylinder-primitive.cpp">
+>>>>>>> 1b4172d245de9f30cab3fc28f7e41acdfdb9199c
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -932,7 +936,11 @@
     <ClInclude Include="samplers\multi-jittered-sampler.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+<<<<<<< HEAD
     <ClInclude Include="primitives\difference-primitive.h">
+=======
+    <ClInclude Include="primitives\cylinder-primitive.h">
+>>>>>>> 1b4172d245de9f30cab3fc28f7e41acdfdb9199c
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

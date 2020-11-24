@@ -73,7 +73,6 @@ team_member 'Noa' do
   extension MaterialTranslate3D
   extension NRooksSampler
   extension MultijitteredSampler
-  extension ConeAlongY
   #Lvl 4
   extension Intersection
   extension FisheyeCamera

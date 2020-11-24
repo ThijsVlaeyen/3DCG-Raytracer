@@ -388,11 +388,6 @@
     <ClCompile Include="pipeline\wif-consumer.cpp" />
     <ClCompile Include="pipeline\wif-processor.cpp" />
     <ClCompile Include="primitives\bounding-box-primitive.cpp" />
-<<<<<<< HEAD
-    <ClCompile Include="primitives\difference-primitive.cpp" />
-=======
-    <ClCompile Include="primitives\cylinder-primitive.cpp" />
->>>>>>> 1b4172d245de9f30cab3fc28f7e41acdfdb9199c
     <ClCompile Include="primitives\intersect-primitive.cpp" />
     <ClCompile Include="primitives\primitive.cpp" />
     <ClCompile Include="imaging\color-mapper.cpp" />
@@ -558,11 +553,6 @@
     <ClInclude Include="pipeline\wif-consumer.h" />
     <ClInclude Include="pipeline\wif-processor.h" />
     <ClInclude Include="primitives\bounding-box-primitive.h" />
-<<<<<<< HEAD
-    <ClInclude Include="primitives\difference-primitive.h" />
-=======
-    <ClInclude Include="primitives\cylinder-primitive.h" />
->>>>>>> 1b4172d245de9f30cab3fc28f7e41acdfdb9199c
     <ClInclude Include="primitives\intersect-primitive.h" />
     <ClInclude Include="primitives\triangle-primitive.h" />
     <ClInclude Include="raytracers\ray-tracer-v1.h" />
