@@ -40,6 +40,29 @@ namespace
         {
             return ease(a, f);
         }
+
+        Animation<Point3D> lissajous(animation::Duration duration, const double& xAmp, const double& yAmp, const double& zAmp, const double& xFreq, const double& yFreq, const double& zFreq, math::Angle& xPhase, math::Angle& yPhase, math::Angle& zPhase) const
+        {
+            return animation::lissajous_animation(duration, xAmp, yAmp, zAmp, xFreq, yFreq, zFreq, xPhase, yPhase, zPhase);
+        }
+
+        Animation<Point3D> mapped_lissajous(const std::map<std::string, Boxed_Value>& argument_map) const
+        {
+            START_ARGUMENTS(argument_map);
+            OPTIONAL_ARGUMENT(Duration, duration, 1_s);
+            OPTIONAL_ARGUMENT(int, x_amplitude, 0);
+            OPTIONAL_ARGUMENT(int, y_amplitude, 0);
+            OPTIONAL_ARGUMENT(int, z_amplitude, 0);
+            OPTIONAL_ARGUMENT(int, x_frequency, 0);
+            OPTIONAL_ARGUMENT(int, y_frequency, 0);
+            OPTIONAL_ARGUMENT(int, z_frequency, 0);
+            OPTIONAL_ARGUMENT(Angle, x_phase, 0_degrees);
+            OPTIONAL_ARGUMENT(Angle, y_phase, 0_degrees);
+            OPTIONAL_ARGUMENT(Angle, z_phase, 0_degrees);
+            END_ARGUMENTS();
+
+            return animation::lissajous_animation(duration, x_amplitude, y_amplitude, z_amplitude, x_frequency, y_frequency, z_frequency, x_phase, y_phase, z_phase);
+        }
     };
 
     Duration seconds(double s)
@@ -71,6 +94,8 @@ ModulePtr raytracer::scripting::_private_::create_animation_module()
     BIND_AS(ease_animation<double>, ease);
     BIND_AS(ease_animation<Angle>, ease);
     BIND_AS(ease_animation<Point3D>, ease);
+    BIND_AS(lissajous, animate);
+    BIND_AS(mapped_lissajous, lissajous_animation);
 #undef BIND
 #undef BIND_AS
 

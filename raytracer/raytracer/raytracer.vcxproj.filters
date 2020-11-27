@@ -115,6 +115,7 @@
     <ClCompile Include="util\beep.cpp" />
     <ClCompile Include="util\misc.cpp" />
     <ClCompile Include="primitives\cube-primitive.cpp" />
+    <ClCompile Include="animation\lissajous.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="animation\animation.h" />
@@ -315,5 +316,6 @@
     <ClInclude Include="math\rectangle2d.h" />
     <ClInclude Include="version.h" />
     <ClInclude Include="primitives\cube-primitive.h" />
+    <ClInclude Include="animation\lissajous.h" />
   </ItemGroup>
 </Project>
