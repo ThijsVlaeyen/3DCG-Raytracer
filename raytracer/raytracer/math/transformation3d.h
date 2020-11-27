@@ -24,5 +24,6 @@ namespace math
         Transformation3D rotate_y(Angle);
         Transformation3D rotate_x(Angle);
         Transformation3D rotate_z(Angle);
+        Transformation3D scale(double, double, double);
     }
 }

@@ -34,3 +34,11 @@ Transformation3D math::transformations::rotate_z(Angle a)
 	Matrix4x4 itm = transformation_matrices::rotation_around_z(-a);
 	return Transformation3D(tm, itm);
 }
+
+Transformation3D math::transformations::scale(const double sx, const double sy, const double sz)
+{
+	const auto tm = transformation_matrices::scaling(sx, sy, sz);
+	const auto itm = transformation_matrices::scaling(1 / sx, 1 / sy, 1 / sz);
+
+	return Transformation3D(tm, itm);
+}

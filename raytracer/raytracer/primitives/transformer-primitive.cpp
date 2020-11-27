@@ -110,3 +110,8 @@ Primitive raytracer::primitives::rotate_around_z(Angle a, Primitive transformee)
 {
     return transform(math::transformations::rotate_z(a), transformee);
 }
+
+Primitive raytracer::primitives::scale(const double sx, const double sy, const double sz, Primitive transformee)
+{
+    return transform(transformations::scale(sx, sy, sz), transformee);
+}
