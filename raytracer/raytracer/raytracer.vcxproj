@@ -373,6 +373,7 @@
     <ClCompile Include="materials\pattern-materials.cpp" />
     <ClCompile Include="math\functions\easing\linear-easing-function.cpp" />
     <ClCompile Include="math\functions\easing\quadratic-function.cpp" />
+    <ClCompile Include="math\functions\easing\quintic-function.cpp" />
     <ClCompile Include="math\functions\easing\stretch-easing-function.cpp" />
     <ClCompile Include="math\functions\grid2d-pattern.cpp" />
     <ClCompile Include="math\functions\horizontal-lines-pattern.cpp" />
@@ -532,6 +533,7 @@
     <ClInclude Include="math\functions\easing-function.h" />
     <ClInclude Include="math\functions\easing\linear-easing-function.h" />
     <ClInclude Include="math\functions\easing\quadratic-function.h" />
+    <ClInclude Include="math\functions\easing\quintic-function.h" />
     <ClInclude Include="math\functions\easing\stretch-easing-function.h" />
     <ClInclude Include="math\functions\grid2d-pattern.h" />
     <ClInclude Include="math\functions\horizontal-lines-pattern.h" />
