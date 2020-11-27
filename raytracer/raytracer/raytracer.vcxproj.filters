@@ -1,950 +1,319 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Source Files">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
-    </Filter>
-    <Filter Include="Header Files">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
-    </Filter>
-    <Filter Include="Resource Files">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
-    </Filter>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="imaging\bitmap.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="imaging\color.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="cameras\perspective-camera.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="app.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="math\rectangle3d.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="math\rectangle2d.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="math\ray.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="materials\uniform-material.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="math\rasterizer.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="logging.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="imaging\color-mapper.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="materials\material.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="lights\point-light.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="lights\omnidirectional-point-light.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="cameras\camera.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="math\quadratic_equation.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="math\box.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="animation\duration.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="animation\time-stamp.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="animation\animation.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="math\functions\random-function.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="lights\light-ray.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="cameras\displaceable-camera.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="materials\material-properties.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="imaging\bmp-format.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="pipeline\animation-processor.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="pipeline\renderer-processor.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="pipeline\wif-consumer.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="imaging\wif-format.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="math\quantize.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="imaging\bitmap-function.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="materials\pattern-materials.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="util\misc.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="util\beep.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="scripting\animation-module.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="scripting\cameras-module.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="scripting\imaging-module.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="scripting\lights-module.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="scripting\materials-module.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="scripting\math-module.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="scripting\pipeline-module.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="scripting\primitives-module.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="scripting\raytracing-module.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="scripting\rendering-module.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="scripting\samplers-module.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="scripting\scripting.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="math\matrix.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="math\transformation-matrices.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="primitives\decorator-primitive.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="primitives\plane-primitive.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="primitives\sphere-primitive.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="primitives\transformer-primitive.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="primitives\union-primitive.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="math\plane.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="raytracers\ray-tracer-v0.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="renderers\renderer.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="renderers\standard-renderer.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="samplers\single-sampler.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="math\functions\horizontal-lines-pattern.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="math\transformation3d.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="math\transformation2d.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="materials\composition-material.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="math\angle.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="primitives\primitive.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="math\functions\easing\linear-easing-function.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="demos\demo.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="samplers\sampler.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="tasks\lambda-task.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="tasks\serial-task-scheduler.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="tests\main.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="performance\performance.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="math\functions\easing\stretch-easing-function.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="pipeline\wif-processor.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="pipeline\base64-processor.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="util\base64.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="pipeline\text-writer-consumer.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="command-line-parser.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="tests\main.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="demos\basic-sample.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="demos\demoVlaeyenThijs.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="raytracers\ray-tracer-v1.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="demos\sample-ray-tracer-v1.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="raytracers\ray-tracer-v2.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="raytracers\ray-tracer-v3.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="raytracers\ray-tracer-v4.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="raytracers\ray-tracer-v5.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="math\functions\vertical-lines-pattern.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="demos\demoVanderhulstKasper.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="raytracers\ray-tracer-v6.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="primitives\triangle-primitive.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="primitives\bounding-box-primitive.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="lights\spot-light.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="primitives\square-primitive.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="math\functions\easing\quadratic-function.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="math\functions\grid2d-pattern.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="materials\material2d-transformer.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="imaging\ppm-format.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="pipeline\ppm-consumer.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="primitives\intersect-primitive.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="samplers\random-sampler.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="demos\demoAndriesNoa.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="tasks\parallel-task-scheduler.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="materials\material3d-transformer.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="cameras\fisheye-camera.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="samplers\stratified-sampler.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="samplers\jittered-sampler.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="samplers\half-jittered-sampler.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="samplers\n-rooks-sampler.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="samplers\multi-jittered-sampler.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-<<<<<<< HEAD
-    <ClCompile Include="primitives\difference-primitive.cpp">
-=======
-    <ClCompile Include="primitives\cylinder-primitive.cpp">
->>>>>>> 1b4172d245de9f30cab3fc28f7e41acdfdb9199c
-      <Filter>Source Files</Filter>
-    </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="imaging\bitmap.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="imaging\color.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="math\ray.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="math\interval.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="cameras\perspective-camera.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="primitives\primitive.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="primitives\hit.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="util\misc.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="math\rectangle3d.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="math\rectangle2d.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Catch.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="materials\uniform-material.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="math\angle.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="math\interval-mapper.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="math\rasterizer.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="animation\animation.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="cameras\camera.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="primitives\primitives.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="materials\materials.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="easylogging++.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="materials\material.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="logging.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="math\functions\bool-mapper.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="imaging\color-mapper.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="math\functions\noise.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="math\functions\patterns.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="math\function.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="primitives\hit-position.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="cameras\cameras.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="math\approx.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="lights\light-source.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="lights\point-light.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="lights\omnidirectional-point-light.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="lights\lights.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="math\misc.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="math\quadratic_equation.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="math\box.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="animation\duration.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="animation\time-stamp.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="math\functions\random-function.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="util\lazy.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="lights\light-ray.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="cameras\displaceable-camera.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="materials\material-properties.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="math\functions\easing-functions.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="data-structures\array.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="data-structures\grid.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="math\point.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="math\vector.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="data-structures\position.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="imaging\bmp-format.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="pipeline\consumer.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="pipeline\producer.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="pipeline\processor.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="pipeline\animation-processor.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="pipeline\renderer-processor.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="pipeline\wif-consumer.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="pipeline\pipelines.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="imaging\wif-format.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="pipeline\pipeline-builder.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="pipeline\pipeline.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="math\coordinate-systems.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="math\functions\constant.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="math\functions\identity.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="math\functions.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="math\quantize.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="imaging\bitmap-function.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="chaiscript\dispatchkit\any.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="chaiscript\dispatchkit\bad_boxed_cast.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="chaiscript\dispatchkit\bind_first.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="chaiscript\dispatchkit\bootstrap.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="chaiscript\dispatchkit\bootstrap_stl.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="chaiscript\dispatchkit\boxed_cast.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="chaiscript\dispatchkit\boxed_cast_helper.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="chaiscript\dispatchkit\boxed_number.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="chaiscript\dispatchkit\boxed_value.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="chaiscript\dispatchkit\callable_traits.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="chaiscript\dispatchkit\dispatchkit.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="chaiscript\dispatchkit\dynamic_object.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="chaiscript\dispatchkit\dynamic_object_detail.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="chaiscript\dispatchkit\exception_specification.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="chaiscript\dispatchkit\function_call.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="chaiscript\dispatchkit\function_call_detail.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="chaiscript\dispatchkit\handle_return.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="chaiscript\dispatchkit\operators.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="chaiscript\dispatchkit\proxy_constructors.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="chaiscript\dispatchkit\proxy_functions.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="chaiscript\dispatchkit\proxy_functions_detail.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="chaiscript\dispatchkit\register_function.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="chaiscript\dispatchkit\type_conversions.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="chaiscript\dispatchkit\type_info.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="chaiscript\language\chaiscript_algebraic.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="chaiscript\language\chaiscript_common.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="chaiscript\language\chaiscript_engine.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="chaiscript\language\chaiscript_eval.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="chaiscript\language\chaiscript_parser.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="chaiscript\language\chaiscript_prelude_docs.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="chaiscript\utility\json.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="chaiscript\utility\json_wrap.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="chaiscript\utility\utility.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="chaiscript\chaiscript.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="chaiscript\chaiscript_defines.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="chaiscript\chaiscript_stdlib.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="chaiscript\chaiscript_threading.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="materials\pattern-materials.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="version.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="pipeline\null-consumer.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="animation\animations.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="animation\interval-animation.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="animation\ease-animation.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="util\beep.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="scripting\animation-module.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="scripting\cameras-module.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="scripting\imaging-module.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="scripting\lights-module.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="scripting\materials-module.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="scripting\math-module.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="scripting\pipeline-module.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="scripting\primitives-module.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="scripting\raytracing-module.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="scripting\rendering-module.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="scripting\samplers-module.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="scripting\scripting.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="scripting\scripting-util.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="math\matrix.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="math\transformation-matrices.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="primitives\decorator-primitive.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="primitives\plane-primitive.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="primitives\sphere-primitive.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="primitives\transformer-primitive.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="primitives\union-primitive.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="math\plane.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="raytracers\ray-tracer.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="raytracers\ray-tracers.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="raytracers\ray-tracer-v0.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="raytracers\scene.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="raytracers\trace-result.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="renderers\renderer.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="renderers\renderers.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="renderers\standard-renderer.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="samplers\sampler.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="samplers\samplers.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="samplers\single-sampler.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="math\functions\horizontal-lines-pattern.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="math\transformation3d.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="math\transformation2d.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="materials\composition-material.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="math\functions\easing-function.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="math\functions\easing\linear-easing-function.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="demos\demos.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="demos\demo.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="tasks\lambda-task.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="tasks\serial-task-scheduler.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="tasks\task.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="tasks\task-helpers.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="tasks\tasks.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="tasks\task-scheduler.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="tasks\task-schedulers.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="demos\basic-sample.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="performance\performance.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="math\functions\easing\stretch-easing-function.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="pipeline\wif-processor.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="pipeline\base64-processor.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="util\base64.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="pipeline\text-writer-consumer.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="command-line-parser.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="demos\demoVlaeyenThijs.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="raytracers\ray-tracer-v1.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="demos\sample-ray-tracer-v1.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="raytracers\ray-tracer-v2.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="raytracers\ray-tracer-v3.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="raytracers\ray-tracer-v4.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="raytracers\ray-tracer-v5.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="math\functions\vertical-lines-pattern.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="demos\demoVanderhulstKasper.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="raytracers\ray-tracer-v6.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="primitives\triangle-primitive.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="primitives\bounding-box-primitive.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="lights\spot-light.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="math\functions\easing\quadratic-function.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="math\functions\grid2d-pattern.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="materials\material2d-transformer.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="imaging\ppm-format.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="pipeline\ppm-consumer.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="primitives\intersect-primitive.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="samplers\random-sampler.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="demos\demoAndriesNoa.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="tasks\parallel-task-scheduler.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="materials\material3d-transformer.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="cameras\fisheye-camera.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="samplers\stratified-sampler.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="samplers\jittered-sampler.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="samplers\half-jittered-sampler.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="samplers\n-rooks-sampler.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="samplers\multi-jittered-sampler.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-<<<<<<< HEAD
-    <ClInclude Include="primitives\difference-primitive.h">
-=======
-    <ClInclude Include="primitives\cylinder-primitive.h">
->>>>>>> 1b4172d245de9f30cab3fc28f7e41acdfdb9199c
-      <Filter>Header Files</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
     <Natvis Include="debugger-visualizations.natvis" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="cameras\fisheye-camera.cpp" />
+    <ClCompile Include="demos\basic-sample.cpp" />
+    <ClCompile Include="demos\demo.cpp" />
+    <ClCompile Include="demos\demoAndriesNoa.cpp" />
+    <ClCompile Include="demos\demoVanderhulstKasper.cpp" />
+    <ClCompile Include="demos\demoVlaeyenThijs.cpp" />
+    <ClCompile Include="demos\sample-ray-tracer-v1.cpp" />
+    <ClCompile Include="imaging\ppm-format.cpp" />
+    <ClCompile Include="lights\spot-light.cpp" />
+    <ClCompile Include="materials\material2d-transformer.cpp" />
+    <ClCompile Include="materials\material3d-transformer.cpp" />
+    <ClCompile Include="math\angle.cpp" />
+    <ClCompile Include="animation\animation.cpp" />
+    <ClCompile Include="animation\duration.cpp" />
+    <ClCompile Include="animation\time-stamp.cpp" />
+    <ClCompile Include="command-line-parser.cpp" />
+    <ClCompile Include="imaging\bitmap-function.cpp" />
+    <ClCompile Include="app.cpp" />
+    <ClCompile Include="cameras\camera.cpp" />
+    <ClCompile Include="cameras\displaceable-camera.cpp" />
+    <ClCompile Include="cameras\perspective-camera.cpp" />
+    <ClCompile Include="materials\composition-material.cpp" />
+    <ClCompile Include="materials\material-properties.cpp" />
+    <ClCompile Include="materials\pattern-materials.cpp" />
+    <ClCompile Include="math\functions\easing\linear-easing-function.cpp" />
+    <ClCompile Include="math\functions\easing\quadratic-function.cpp" />
+    <ClCompile Include="math\functions\easing\stretch-easing-function.cpp" />
+    <ClCompile Include="math\functions\grid2d-pattern.cpp" />
+    <ClCompile Include="math\functions\horizontal-lines-pattern.cpp" />
+    <ClCompile Include="math\functions\vertical-lines-pattern.cpp" />
+    <ClCompile Include="math\plane.cpp" />
+    <ClCompile Include="math\quantize.cpp" />
+    <ClCompile Include="math\transformation-matrices.cpp" />
+    <ClCompile Include="performance\performance.cpp" />
+    <ClCompile Include="pipeline\animation-processor.cpp" />
+    <ClCompile Include="pipeline\base64-processor.cpp" />
+    <ClCompile Include="pipeline\ppm-consumer.cpp" />
+    <ClCompile Include="pipeline\renderer-processor.cpp" />
+    <ClCompile Include="pipeline\text-writer-consumer.cpp" />
+    <ClCompile Include="pipeline\wif-consumer.cpp" />
+    <ClCompile Include="pipeline\wif-processor.cpp" />
+    <ClCompile Include="primitives\bounding-box-primitive.cpp" />
+    <ClCompile Include="primitives\difference-primitive.cpp" />
+    <ClCompile Include="primitives\cylinder-primitive.cpp" />
+    <ClCompile Include="primitives\intersect-primitive.cpp" />
+    <ClCompile Include="primitives\primitive.cpp" />
+    <ClCompile Include="imaging\color-mapper.cpp" />
+    <ClCompile Include="lights\omnidirectional-point-light.cpp" />
+    <ClCompile Include="lights\point-light.cpp" />
+    <ClCompile Include="logging.cpp" />
+    <ClCompile Include="imaging\bitmap.cpp" />
+    <ClCompile Include="imaging\color.cpp" />
+    <ClCompile Include="imaging\bmp-format.cpp" />
+    <ClCompile Include="imaging\wif-format.cpp" />
+    <ClCompile Include="materials\material.cpp" />
+    <ClCompile Include="materials\uniform-material.cpp" />
+    <ClCompile Include="math\box.cpp" />
+    <ClCompile Include="math\matrix.cpp" />
+    <ClCompile Include="math\quadratic_equation.cpp" />
+    <ClCompile Include="math\functions\random-function.cpp" />
+    <ClCompile Include="math\rasterizer.cpp" />
+    <ClCompile Include="math\rectangle3d.cpp" />
+    <ClCompile Include="math\transformation3d.cpp" />
+    <ClCompile Include="math\ray.cpp" />
+    <ClCompile Include="primitives\plane-primitive.cpp" />
+    <ClCompile Include="primitives\decorator-primitive.cpp" />
+    <ClCompile Include="primitives\sphere-primitive.cpp" />
+    <ClCompile Include="math\rectangle2d.cpp" />
+    <ClCompile Include="primitives\square-primitive.cpp" />
+    <ClCompile Include="primitives\transformer-primitive.cpp" />
+    <ClCompile Include="primitives\triangle-primitive.cpp" />
+    <ClCompile Include="primitives\union-primitive.cpp" />
+    <ClCompile Include="raytracers\ray-tracer-v0.cpp" />
+    <ClCompile Include="raytracers\ray-tracer-v1.cpp" />
+    <ClCompile Include="raytracers\ray-tracer-v2.cpp" />
+    <ClCompile Include="raytracers\ray-tracer-v3.cpp" />
+    <ClCompile Include="raytracers\ray-tracer-v4.cpp" />
+    <ClCompile Include="raytracers\ray-tracer-v5.cpp" />
+    <ClCompile Include="raytracers\ray-tracer-v6.cpp" />
+    <ClCompile Include="renderers\renderer.cpp" />
+    <ClCompile Include="renderers\standard-renderer.cpp" />
+    <ClCompile Include="lights\light-ray.cpp" />
+    <ClCompile Include="samplers\half-jittered-sampler.cpp" />
+    <ClCompile Include="samplers\jittered-sampler.cpp" />
+    <ClCompile Include="samplers\multi-jittered-sampler.cpp" />
+    <ClCompile Include="samplers\n-rooks-sampler.cpp" />
+    <ClCompile Include="samplers\random-sampler.cpp" />
+    <ClCompile Include="samplers\sampler.cpp" />
+    <ClCompile Include="samplers\single-sampler.cpp" />
+    <ClCompile Include="samplers\stratified-sampler.cpp" />
+    <ClCompile Include="scripting\animation-module.cpp" />
+    <ClCompile Include="scripting\cameras-module.cpp" />
+    <ClCompile Include="scripting\imaging-module.cpp" />
+    <ClCompile Include="scripting\lights-module.cpp" />
+    <ClCompile Include="scripting\materials-module.cpp" />
+    <ClCompile Include="scripting\math-module.cpp" />
+    <ClCompile Include="scripting\pipeline-module.cpp" />
+    <ClCompile Include="scripting\primitives-module.cpp" />
+    <ClCompile Include="scripting\raytracing-module.cpp" />
+    <ClCompile Include="scripting\rendering-module.cpp" />
+    <ClCompile Include="scripting\samplers-module.cpp" />
+    <ClCompile Include="scripting\scripting.cpp" />
+    <ClCompile Include="math\transformation2d.cpp" />
+    <ClCompile Include="tasks\lambda-task.cpp" />
+    <ClCompile Include="tasks\parallel-task-scheduler.cpp" />
+    <ClCompile Include="tasks\serial-task-scheduler.cpp" />
+    <ClCompile Include="tests\main.cpp" />
+    <ClCompile Include="util\base64.cpp" />
+    <ClCompile Include="util\beep.cpp" />
+    <ClCompile Include="util\misc.cpp" />
+    <ClCompile Include="primitives\cube-primitive.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="animation\animation.h" />
+    <ClInclude Include="animation\animations.h" />
+    <ClInclude Include="animation\duration.h" />
+    <ClInclude Include="animation\ease-animation.h" />
+    <ClInclude Include="animation\interval-animation.h" />
+    <ClInclude Include="animation\time-stamp.h" />
+    <ClInclude Include="cameras\fisheye-camera.h" />
+    <ClInclude Include="chaiscript\chaiscript.hpp" />
+    <ClInclude Include="chaiscript\chaiscript_defines.hpp" />
+    <ClInclude Include="chaiscript\chaiscript_stdlib.hpp" />
+    <ClInclude Include="chaiscript\chaiscript_threading.hpp" />
+    <ClInclude Include="chaiscript\dispatchkit\any.hpp" />
+    <ClInclude Include="chaiscript\dispatchkit\bad_boxed_cast.hpp" />
+    <ClInclude Include="chaiscript\dispatchkit\bind_first.hpp" />
+    <ClInclude Include="chaiscript\dispatchkit\bootstrap.hpp" />
+    <ClInclude Include="chaiscript\dispatchkit\bootstrap_stl.hpp" />
+    <ClInclude Include="chaiscript\dispatchkit\boxed_cast.hpp" />
+    <ClInclude Include="chaiscript\dispatchkit\boxed_cast_helper.hpp" />
+    <ClInclude Include="chaiscript\dispatchkit\boxed_number.hpp" />
+    <ClInclude Include="chaiscript\dispatchkit\boxed_value.hpp" />
+    <ClInclude Include="chaiscript\dispatchkit\callable_traits.hpp" />
+    <ClInclude Include="chaiscript\dispatchkit\dispatchkit.hpp" />
+    <ClInclude Include="chaiscript\dispatchkit\dynamic_object.hpp" />
+    <ClInclude Include="chaiscript\dispatchkit\dynamic_object_detail.hpp" />
+    <ClInclude Include="chaiscript\dispatchkit\exception_specification.hpp" />
+    <ClInclude Include="chaiscript\dispatchkit\function_call.hpp" />
+    <ClInclude Include="chaiscript\dispatchkit\function_call_detail.hpp" />
+    <ClInclude Include="chaiscript\dispatchkit\handle_return.hpp" />
+    <ClInclude Include="chaiscript\dispatchkit\operators.hpp" />
+    <ClInclude Include="chaiscript\dispatchkit\proxy_constructors.hpp" />
+    <ClInclude Include="chaiscript\dispatchkit\proxy_functions.hpp" />
+    <ClInclude Include="chaiscript\dispatchkit\proxy_functions_detail.hpp" />
+    <ClInclude Include="chaiscript\dispatchkit\register_function.hpp" />
+    <ClInclude Include="chaiscript\dispatchkit\type_conversions.hpp" />
+    <ClInclude Include="chaiscript\dispatchkit\type_info.hpp" />
+    <ClInclude Include="chaiscript\language\chaiscript_algebraic.hpp" />
+    <ClInclude Include="chaiscript\language\chaiscript_common.hpp" />
+    <ClInclude Include="chaiscript\language\chaiscript_engine.hpp" />
+    <ClInclude Include="chaiscript\language\chaiscript_eval.hpp" />
+    <ClInclude Include="chaiscript\language\chaiscript_parser.hpp" />
+    <ClInclude Include="chaiscript\language\chaiscript_prelude_docs.hpp" />
+    <ClInclude Include="chaiscript\utility\json.hpp" />
+    <ClInclude Include="chaiscript\utility\json_wrap.hpp" />
+    <ClInclude Include="chaiscript\utility\utility.hpp" />
+    <ClInclude Include="demos\basic-sample.h" />
+    <ClInclude Include="command-line-parser.h" />
+    <ClInclude Include="demos\demo.h" />
+    <ClInclude Include="demos\demoAndriesNoa.h" />
+    <ClInclude Include="demos\demos.h" />
+    <ClInclude Include="demos\demoVanderhulstKasper.h" />
+    <ClInclude Include="demos\demoVlaeyenThijs.h" />
+    <ClInclude Include="demos\sample-ray-tracer-v1.h" />
+    <ClInclude Include="imaging\ppm-format.h" />
+    <ClInclude Include="lights\spot-light.h" />
+    <ClInclude Include="materials\composition-material.h" />
+    <ClInclude Include="imaging\bitmap-function.h" />
+    <ClInclude Include="cameras\camera.h" />
+    <ClInclude Include="cameras\cameras.h" />
+    <ClInclude Include="cameras\displaceable-camera.h" />
+    <ClInclude Include="cameras\perspective-camera.h" />
+    <ClInclude Include="Catch.h" />
+    <ClInclude Include="data-structures\grid.h" />
+    <ClInclude Include="imaging\bmp-format.h" />
+    <ClInclude Include="materials\material2d-transformer.h" />
+    <ClInclude Include="materials\material3d-transformer.h" />
+    <ClInclude Include="materials\pattern-materials.h" />
+    <ClInclude Include="math\coordinate-systems.h" />
+    <ClInclude Include="math\functions\constant.h" />
+    <ClInclude Include="math\functions\easing-function.h" />
+    <ClInclude Include="math\functions\easing\linear-easing-function.h" />
+    <ClInclude Include="math\functions\easing\quadratic-function.h" />
+    <ClInclude Include="math\functions\easing\stretch-easing-function.h" />
+    <ClInclude Include="math\functions\grid2d-pattern.h" />
+    <ClInclude Include="math\functions\horizontal-lines-pattern.h" />
+    <ClInclude Include="math\functions\identity.h" />
+    <ClInclude Include="math\functions\vertical-lines-pattern.h" />
+    <ClInclude Include="math\plane.h" />
+    <ClInclude Include="math\quantize.h" />
+    <ClInclude Include="math\transformation-matrices.h" />
+    <ClInclude Include="math\vector.h" />
+    <ClInclude Include="math\point.h" />
+    <ClInclude Include="performance\performance.h" />
+    <ClInclude Include="pipeline\animation-processor.h" />
+    <ClInclude Include="pipeline\base64-processor.h" />
+    <ClInclude Include="pipeline\consumer.h" />
+    <ClInclude Include="pipeline\null-consumer.h" />
+    <ClInclude Include="pipeline\pipeline-builder.h" />
+    <ClInclude Include="pipeline\pipeline.h" />
+    <ClInclude Include="pipeline\pipelines.h" />
+    <ClInclude Include="pipeline\ppm-consumer.h" />
+    <ClInclude Include="pipeline\processor.h" />
+    <ClInclude Include="pipeline\producer.h" />
+    <ClInclude Include="pipeline\renderer-processor.h" />
+    <ClInclude Include="pipeline\text-writer-consumer.h" />
+    <ClInclude Include="pipeline\wif-consumer.h" />
+    <ClInclude Include="pipeline\wif-processor.h" />
+    <ClInclude Include="primitives\bounding-box-primitive.h" />
+    <ClInclude Include="primitives\difference-primitive.h" />
+    <ClInclude Include="primitives\cylinder-primitive.h" />
+    <ClInclude Include="primitives\intersect-primitive.h" />
+    <ClInclude Include="primitives\triangle-primitive.h" />
+    <ClInclude Include="raytracers\ray-tracer-v1.h" />
+    <ClInclude Include="raytracers\ray-tracer-v2.h" />
+    <ClInclude Include="raytracers\ray-tracer-v3.h" />
+    <ClInclude Include="raytracers\ray-tracer-v4.h" />
+    <ClInclude Include="raytracers\ray-tracer-v5.h" />
+    <ClInclude Include="raytracers\ray-tracer-v6.h" />
+    <ClInclude Include="raytracers\trace-result.h" />
+    <ClInclude Include="easylogging++.h" />
+    <ClInclude Include="imaging\bitmap.h" />
+    <ClInclude Include="imaging\color-mapper.h" />
+    <ClInclude Include="imaging\color.h" />
+    <ClInclude Include="imaging\wif-format.h" />
+    <ClInclude Include="lights\light-source.h" />
+    <ClInclude Include="lights\lights.h" />
+    <ClInclude Include="lights\omnidirectional-point-light.h" />
+    <ClInclude Include="lights\point-light.h" />
+    <ClInclude Include="materials\material-properties.h" />
+    <ClInclude Include="materials\material.h" />
+    <ClInclude Include="materials\materials.h" />
+    <ClInclude Include="materials\uniform-material.h" />
+    <ClInclude Include="math\angle.h" />
+    <ClInclude Include="math\approx.h" />
+    <ClInclude Include="math\box.h" />
+    <ClInclude Include="math\function.h" />
+    <ClInclude Include="math\functions\bool-mapper.h" />
+    <ClInclude Include="math\functions\easing-functions.h" />
+    <ClInclude Include="math\functions.h" />
+    <ClInclude Include="math\functions\patterns.h" />
+    <ClInclude Include="math\interval.h" />
+    <ClInclude Include="math\interval-mapper.h" />
+    <ClInclude Include="math\matrix.h" />
+    <ClInclude Include="math\functions\noise.h" />
+    <ClInclude Include="math\misc.h" />
+    <ClInclude Include="math\quadratic_equation.h" />
+    <ClInclude Include="math\functions\random-function.h" />
+    <ClInclude Include="math\rasterizer.h" />
+    <ClInclude Include="math\ray.h" />
+    <ClInclude Include="math\rectangle3d.h" />
+    <ClInclude Include="math\transformation3d.h" />
+    <ClInclude Include="logging.h" />
+    <ClInclude Include="primitives\hit-position.h" />
+    <ClInclude Include="primitives\plane-primitive.h" />
+    <ClInclude Include="primitives\primitives.h" />
+    <ClInclude Include="primitives\decorator-primitive.h" />
+    <ClInclude Include="primitives\hit.h" />
+    <ClInclude Include="primitives\primitive.h" />
+    <ClInclude Include="primitives\sphere-primitive.h" />
+    <ClInclude Include="primitives\transformer-primitive.h" />
+    <ClInclude Include="primitives\union-primitive.h" />
+    <ClInclude Include="raytracers\ray-tracer-v0.h" />
+    <ClInclude Include="raytracers\ray-tracer.h" />
+    <ClInclude Include="raytracers\ray-tracers.h" />
+    <ClInclude Include="raytracers\scene.h" />
+    <ClInclude Include="renderers\renderer.h" />
+    <ClInclude Include="renderers\renderers.h" />
+    <ClInclude Include="renderers\standard-renderer.h" />
+    <ClInclude Include="lights\light-ray.h" />
+    <ClInclude Include="samplers\half-jittered-sampler.h" />
+    <ClInclude Include="samplers\jittered-sampler.h" />
+    <ClInclude Include="samplers\multi-jittered-sampler.h" />
+    <ClInclude Include="samplers\n-rooks-sampler.h" />
+    <ClInclude Include="samplers\random-sampler.h" />
+    <ClInclude Include="samplers\sampler.h" />
+    <ClInclude Include="samplers\samplers.h" />
+    <ClInclude Include="samplers\single-sampler.h" />
+    <ClInclude Include="data-structures\array.h" />
+    <ClInclude Include="samplers\stratified-sampler.h" />
+    <ClInclude Include="scripting\animation-module.h" />
+    <ClInclude Include="scripting\cameras-module.h" />
+    <ClInclude Include="scripting\imaging-module.h" />
+    <ClInclude Include="scripting\lights-module.h" />
+    <ClInclude Include="scripting\materials-module.h" />
+    <ClInclude Include="scripting\math-module.h" />
+    <ClInclude Include="scripting\pipeline-module.h" />
+    <ClInclude Include="scripting\primitives-module.h" />
+    <ClInclude Include="scripting\raytracing-module.h" />
+    <ClInclude Include="scripting\rendering-module.h" />
+    <ClInclude Include="scripting\samplers-module.h" />
+    <ClInclude Include="scripting\scripting-util.h" />
+    <ClInclude Include="scripting\scripting.h" />
+    <ClInclude Include="math\transformation2d.h" />
+    <ClInclude Include="tasks\lambda-task.h" />
+    <ClInclude Include="tasks\parallel-task-scheduler.h" />
+    <ClInclude Include="tasks\serial-task-scheduler.h" />
+    <ClInclude Include="tasks\task-helpers.h" />
+    <ClInclude Include="tasks\task-scheduler.h" />
+    <ClInclude Include="tasks\task-schedulers.h" />
+    <ClInclude Include="tasks\task.h" />
+    <ClInclude Include="tasks\tasks.h" />
+    <ClInclude Include="util\base64.h" />
+    <ClInclude Include="util\beep.h" />
+    <ClInclude Include="util\lazy.h" />
+    <ClInclude Include="util\misc.h" />
+    <ClInclude Include="data-structures\position.h" />
+    <ClInclude Include="math\rectangle2d.h" />
+    <ClInclude Include="version.h" />
+    <ClInclude Include="primitives\cube-primitive.h" />
   </ItemGroup>
 </Project>
