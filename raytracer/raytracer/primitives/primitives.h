@@ -12,3 +12,4 @@
 #include "primitives/square-primitive.h"
 #include "primitives/cylinder-primitive.h"
 #include "primitives/cube-primitive.h"
+#include "primitives/cone-primitive.h"

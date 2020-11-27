@@ -390,6 +390,7 @@
     <ClCompile Include="pipeline\wif-consumer.cpp" />
     <ClCompile Include="pipeline\wif-processor.cpp" />
     <ClCompile Include="primitives\bounding-box-primitive.cpp" />
+    <ClCompile Include="primitives\cone-primitive.cpp" />
     <ClCompile Include="primitives\cube-primitive.cpp" />
     <ClCompile Include="primitives\difference-primitive.cpp" />
     <ClCompile Include="primitives\cylinder-primitive.cpp" />
@@ -560,6 +561,7 @@
     <ClInclude Include="pipeline\wif-consumer.h" />
     <ClInclude Include="pipeline\wif-processor.h" />
     <ClInclude Include="primitives\bounding-box-primitive.h" />
+    <ClInclude Include="primitives\cone-primitive.h" />
     <ClInclude Include="primitives\cube-primitive.h" />
     <ClInclude Include="primitives\difference-primitive.h" />
     <ClInclude Include="primitives\cylinder-primitive.h" />

@@ -50,6 +50,7 @@ ModulePtr raytracer::scripting::_private_::create_primitives_module()
     BIND_DIRECTLY(xz_square);
     BIND_DIRECTLY(yz_square);
     BIND_DIRECTLY(cylinder_along_y);
+    BIND_DIRECTLY(cone_along_y);
     BIND_DIRECTLY(make_intersect);
     BIND_DIRECTLY(make_difference);
     BIND_HELPER_FUNCTION_AS(make_union, union);

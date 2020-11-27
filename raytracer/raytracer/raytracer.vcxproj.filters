@@ -117,6 +117,7 @@
     <ClCompile Include="primitives\cube-primitive.cpp" />
     <ClCompile Include="animation\lissajous.cpp" />
     <ClCompile Include="math\functions\easing\quintic-function.cpp" />
+    <ClCompile Include="primitives\cone-primitive.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="animation\animation.h" />
@@ -319,5 +320,6 @@
     <ClInclude Include="primitives\cube-primitive.h" />
     <ClInclude Include="animation\lissajous.h" />
     <ClInclude Include="math\functions\easing\quintic-function.h" />
+    <ClInclude Include="primitives\cone-primitive.h" />
   </ItemGroup>
 </Project>
