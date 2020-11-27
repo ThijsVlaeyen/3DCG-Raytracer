@@ -63,7 +63,27 @@ namespace
 
             return animation::lissajous_animation(duration, x_amplitude, y_amplitude, z_amplitude, x_frequency, y_frequency, z_frequency, x_phase, y_phase, z_phase);
         }
+
+        Animation<Point3D> circular_animation(Point3D& point, Point3D& center, Vector3D& rotation_axis, Interval<math::Angle>& angle_interval, Duration duration) const
+        {
+            return animation::circular(point, center, rotation_axis, angle_interval, duration);
+        }
+
+        Animation<Point3D> circular_animation_map(const std::map<std::string, Boxed_Value>& argument_map) const
+        {
+            START_ARGUMENTS(argument_map);
+            OPTIONAL_ARGUMENT(Point3D, position, Point3D(0, 0, 1));
+            OPTIONAL_ARGUMENT(Point3D, around, Point3D(0, 0, 0));
+            OPTIONAL_ARGUMENT(Vector3D, axis, Vector3D(0, 1, 0));
+            OPTIONAL_ARGUMENT(Interval<Angle>, angle_interval, math::interval(Angle::degrees(0), Angle::degrees(360)));
+            OPTIONAL_ARGUMENT(Duration, duration, Duration::from_seconds(1));
+            END_ARGUMENTS();
+
+            return circular_animation(position, around, axis, angle_interval, duration);
+        }
     };
+
+    
 
     Duration seconds(double s)
     {
@@ -96,6 +116,8 @@ ModulePtr raytracer::scripting::_private_::create_animation_module()
     BIND_AS(ease_animation<Point3D>, ease);
     BIND_AS(lissajous, animate);
     BIND_AS(mapped_lissajous, lissajous_animation);
+    BIND_AS(circular_animation, circular);
+    BIND_AS(circular_animation_map, circular);
 #undef BIND
 #undef BIND_AS
 

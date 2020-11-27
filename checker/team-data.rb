@@ -38,16 +38,22 @@ team_member 'Kasper' do
   extension SquareXY
   extension PlaneYZ
   extension PrimitiveRotationX
+  extension PrimitiveScaling
 
   #Lvl 2
   extension AngleAnimation
   extension MaterialGrid2d
   extension RandomSampler
+  extension Cube
+  extension CircularAnimation
   
   #Lvl 3
+  extension ConeAlongY
   extension Ppm
   extension MaterialTransformer2D
   extension MaterialTranslate2D
+  extension Quintic
+  extension Lissajous
   
   #Lvl 4
   extension Difference
