@@ -1,7 +1,10 @@
 #include "quintic-function.h"
 #include <cassert>
+#include "math/interval.h"
 
 using namespace math::functions;
+using namespace math;
+
 
 EasingFunction easing::quintic_in()
 {
