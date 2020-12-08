@@ -1,0 +1,41 @@
+def material(c)
+{
+  Materials.uniform( [ "ambient": Colors.white() * 0.1,
+                       "diffuse": c * 0.8,
+                       "specular": Colors.white() * 0.5,
+                       "specular_exponent": 10,
+                       "reflectivity": 0.0,
+                       "transparency": 0,
+                       "refractive_index": 0 ] )
+}
+
+global statuette = mesh_noa("F:\\school5\\3d\\project\\ray-tracer-noah\\mesh-Noa\\donemesh\\bunny.txt")
+
+def scene_at(now)
+{
+  var camera = Cameras.perspective( [ "eye": pos(0,0,10),
+                                      "look_at": pos(0,0,0) ] )
+
+
+  var angle = Animations.animate(degrees(0), degrees(360), seconds(5))
+  var root = union([decorate( material(Colors.white()), statuette ),
+  decorate( material(Colors.red()), translate(vec(0,-1,0),sphere()) )])
+
+  var lights = [ Lights.omnidirectional( pos(5, 5, 5), Colors.white() ) ]
+
+  create_scene(camera, root, lights)
+}
+
+var raytracer   = Raytracers.v6()
+
+var renderer    = Renderers.standard( [ "width": 1000,
+                                       "height": 1000,
+                                       "sampler": Samplers.single(),
+                                       "ray_tracer": raytracer ] )
+
+pipeline( scene_animation(scene_at, seconds(1)),
+          [ Pipeline.animation(30),
+            Pipeline.renderer(renderer),
+            Pipeline.wif(),
+            Pipeline.base64(),
+            Pipeline.stdout() ] )
