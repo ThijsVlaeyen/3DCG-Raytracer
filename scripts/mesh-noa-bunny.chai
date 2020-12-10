@@ -18,8 +18,8 @@ def scene_at(now)
 
 
   var angle = Animations.animate(degrees(0), degrees(360), seconds(5))
-  var root = union([decorate( material(Colors.white()), statuette ),
-  decorate( material(Colors.red()), translate(vec(0,-1,0),sphere()) )])
+  var decstat = decorate( material(Colors.white()), statuette )
+  var root = rotate_around_y( angle[now], decstat )
 
   var lights = [ Lights.omnidirectional( pos(5, 5, 5), Colors.white() ) ]
 
@@ -28,8 +28,8 @@ def scene_at(now)
 
 var raytracer   = Raytracers.v6()
 
-var renderer    = Renderers.standard( [ "width": 1000,
-                                       "height": 1000,
+var renderer    = Renderers.standard( [ "width": 500,
+                                       "height": 500,
                                        "sampler": Samplers.single(),
                                        "ray_tracer": raytracer ] )
 

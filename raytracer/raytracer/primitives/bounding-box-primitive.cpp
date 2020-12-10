@@ -12,6 +12,9 @@ using namespace math;
 
 namespace
 {
+	CREATE_PERFORMANCE_COUNTER(hit_count, "Hits");
+	CREATE_PERFORMANCE_COUNTER(miss_count, "Misses");
+
 	class BoundingBoxImplementation : public raytracer::primitives::_private_::PrimitiveImplementation
 	{
 	public:
@@ -21,9 +24,11 @@ namespace
 		BoundingBoxImplementation(const Primitive primitive) : primitive(primitive), box(primitive->bounding_box()) {}
 
 		std::vector<std::shared_ptr<Hit>> find_all_hits(const Ray& ray) const override {
-			if (!box.is_hit_positively_by(ray)) {
+			if (!box.is_hit_by(ray)) {
+				INCREMENT_PERFORMANCE_COUNTER(miss_count);
 				return std::vector<std::shared_ptr<Hit>>();
 			}
+			INCREMENT_PERFORMANCE_COUNTER(hit_count);
 			return primitive->find_all_hits(ray);
 		}
 

@@ -109,6 +109,9 @@ int main(int argc, char** argv)
 
     //Comment of uncomment dit afhv wat ge wilt dat het doet but don't delete pls thx ~ Sthino
     //demos::ray_tracer_v1(pipeline::wif("ray-tracer-v2.wif"));
+
+    performance::print_statistics(std::cerr);
+    performance::cleanup();
 }
 
 #endif

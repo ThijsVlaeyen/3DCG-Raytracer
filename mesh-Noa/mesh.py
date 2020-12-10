@@ -18,7 +18,7 @@ with open(inputfile, "r") as mesh:
             vertices.append(vertex)
             file2.write(vertex)
 
-    file2.close()
+
 
     line = mesh.readline()
     
@@ -27,10 +27,34 @@ with open(inputfile, "r") as mesh:
     for t in range(nb_triangles):
         triangle = mesh.readline()
         triangles.append(triangle)
-mesh.close()
+
 
 triangles.sort(key = lambda triangle_elem: max(float(vertices[int(i)].split()[1]) for i in triangle_elem.split()), reverse = True)
 vertices.clear()
+
+class Box:
+    def __init__(*children):
+        self.children = children
+
+def optimize(triangles):
+    if len(triangles) < 10:
+        return Box(*triangles)
+
+    (left, right) = split_triangles(triangles)
+
+    oleft = optimize(left)
+    oright = optimize(right)
+
+    return Box(oleft, oright)
+
+
+def write(root):
+    if isinstance(root, Triangle):
+        print(f"t ....")
+    else:
+        for child in box.children:
+            write(child)
+        ...
 
 with open(outputfile, "a") as file2:
 
