@@ -120,6 +120,7 @@
     <ClCompile Include="primitives\cone-primitive.cpp" />
     <ClCompile Include="animation\circular-animation.cpp" />
     <ClCompile Include="primitives\mesh-primitive-noa.cpp" />
+    <ClCompile Include="primitives\mesh-primitive.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="animation\animation.h" />
@@ -325,5 +326,6 @@
     <ClInclude Include="primitives\cone-primitive.h" />
     <ClInclude Include="animation\circular-animation.h" />
     <ClInclude Include="primitives\mesh-primitive-noa.h" />
+    <ClInclude Include="primitives\mesh-primitive.h" />
   </ItemGroup>
 </Project>

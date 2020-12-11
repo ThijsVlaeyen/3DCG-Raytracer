@@ -54,6 +54,7 @@ ModulePtr raytracer::scripting::_private_::create_primitives_module()
     BIND_DIRECTLY(make_intersect);
     BIND_DIRECTLY(make_difference);
     BIND_DIRECTLY(mesh_noa);
+    BIND_DIRECTLY(mesh);
     BIND_HELPER_FUNCTION_AS(make_union, union);
     BIND_DIRECTLY(decorate);
     BIND_DIRECTLY(translate);
