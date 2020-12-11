@@ -6,6 +6,6 @@ namespace raytracer
 {
 	namespace primitives
 	{
-		Primitive mesh_noa(std::string filename);
+		Primitive mesh_noa(const std::string& file);
 	}
 }

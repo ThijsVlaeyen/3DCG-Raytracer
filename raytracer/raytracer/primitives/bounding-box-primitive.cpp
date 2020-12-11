@@ -6,40 +6,50 @@
 #include <assert.h>
 
 using namespace raytracer;
-using namespace raytracer::primitives;
 using namespace math;
-
 
 namespace
 {
-	CREATE_PERFORMANCE_COUNTER(hit_count, "Hits");
-	CREATE_PERFORMANCE_COUNTER(miss_count, "Misses");
-
-	class BoundingBoxImplementation : public raytracer::primitives::_private_::PrimitiveImplementation
+	class BoundingBoxAccelerator : public primitives::_private_::PrimitiveImplementation
 	{
 	public:
-		Primitive primitive;
-		Box box;
+		const Primitive p;
+		const Box bb_child;
 
-		BoundingBoxImplementation(const Primitive primitive) : primitive(primitive), box(primitive->bounding_box()) {}
+		BoundingBoxAccelerator(const Primitive& primitive) :p(primitive), bb_child(primitive->bounding_box()) {}
 
-		std::vector<std::shared_ptr<Hit>> find_all_hits(const Ray& ray) const override {
-			if (!box.is_hit_by(ray)) {
-				INCREMENT_PERFORMANCE_COUNTER(miss_count);
+		std::vector<std::shared_ptr<Hit>> find_all_hits(const Ray& ray) const override
+		{
+			// first check if it intersects the box.
+			if (!bb_child.is_hit_positively_by(ray))
+			{
+				// return if no intersection.
 				return std::vector<std::shared_ptr<Hit>>();
 			}
-			INCREMENT_PERFORMANCE_COUNTER(hit_count);
-			return primitive->find_all_hits(ray);
+			// If intersection, find all the hits.
+			return p->find_all_hits(ray);
 		}
 
-		math::Box bounding_box() const override
+		bool find_first_positive_hit(const Ray& ray, Hit* output_hit) const override
 		{
-			return box;
+			// first check if it intersects the box.
+			if (!bb_child.is_hit_positively_by(ray))
+			{
+				// return if no intersection.
+				return false;
+			}
+			// find the first positive hit.
+			return p->find_first_positive_hit(ray, output_hit);
+		}
+
+		Box bounding_box() const override
+		{
+			return bb_child;
 		}
 	};
 }
 
-Primitive raytracer::primitives::bounding_box_accelerator(const Primitive primitive)
+Primitive primitives::bounding_box_accelerator(const Primitive& primitive)
 {
-	return Primitive(std::make_shared<BoundingBoxImplementation>(primitive));
+	return Primitive(std::make_shared<BoundingBoxAccelerator>(primitive));
 }

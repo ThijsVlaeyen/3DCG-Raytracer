@@ -9,7 +9,7 @@ def material(c)
                        "refractive_index": 0 ] )
 }
 
-global statuette = mesh_noa("F:\\school5\\3d\\project\\ray-tracer-noah\\mesh-Noa\\donemesh\\bunny.txt")
+global statuette = mesh_noa("F:\\school5\\3d\\project\\ray-tracer-noah\\mesh-Noa\\donemesh\\outputBunny.txt")
 
 def scene_at(now)
 {
@@ -28,12 +28,12 @@ def scene_at(now)
 
 var raytracer   = Raytracers.v6()
 
-var renderer    = Renderers.standard( [ "width": 500,
-                                       "height": 500,
-                                       "sampler": Samplers.single(),
+var renderer    = Renderers.standard( [ "width": 400,
+                                       "height": 400,
+                                       "sampler": Samplers.multijittered(1),
                                        "ray_tracer": raytracer ] )
 
-pipeline( scene_animation(scene_at, seconds(1)),
+pipeline( scene_animation(scene_at, seconds(5)),
           [ Pipeline.animation(30),
             Pipeline.renderer(renderer),
             Pipeline.wif(),
