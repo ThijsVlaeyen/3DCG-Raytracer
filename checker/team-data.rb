@@ -27,7 +27,7 @@ team_member 'ThijsVlaeyen' do
   extension RayTracerV6
 
   #Lvl 5
-
+  extension Mesh
 end
 
 team_member 'Kasper' do
@@ -84,6 +84,7 @@ team_member 'Noa' do
   extension Intersection
   extension FisheyeCamera
   #Lvl 5
+  extension Mesh
   
 end
 
