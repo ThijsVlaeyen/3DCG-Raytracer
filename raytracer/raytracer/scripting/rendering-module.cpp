@@ -38,6 +38,10 @@ namespace
         {
             return raytracer::renderers::standard(width, height, sampler, ray_tracer, tasks::schedulers::parallel());
         }
+        Renderer parallel_noa(unsigned width, unsigned height, Sampler sampler, RayTracer ray_tracer) const
+        {
+            return raytracer::renderers::standard(width, height, sampler, ray_tracer, tasks::schedulers::parallel_noa());
+        }
 
         Renderer parallel_by_map(const std::map<std::string, Boxed_Value>& argument_map) const
         {
@@ -49,6 +53,17 @@ namespace
             END_ARGUMENTS();
 
             return parallel(width, height, sampler, ray_tracer);
+        }
+        Renderer parallel_by_map_noa(const std::map<std::string, Boxed_Value>& argument_map) const
+        {
+            START_ARGUMENTS(argument_map);
+            ARGUMENT(unsigned, width);
+            ARGUMENT(unsigned, height);
+            ARGUMENT(Sampler, sampler);
+            ARGUMENT(RayTracer, ray_tracer);
+            END_ARGUMENTS();
+
+            return parallel_noa(width, height, sampler, ray_tracer);
         }
     };
 }
@@ -66,7 +81,9 @@ ModulePtr raytracer::scripting::_private_::create_rendering_module()
     BIND_AS(standard, standard);
     BIND_AS(standard_by_map, standard);
     BIND_AS(parallel, parallel);
+    BIND_AS(parallel_noa, parallel_noa);
     BIND_AS(parallel_by_map, parallel);
+    BIND_AS(parallel_by_map_noa, parallel_noa);
 #   undef BIND_AS
 
     return module;
