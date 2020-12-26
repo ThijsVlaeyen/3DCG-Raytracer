@@ -33,6 +33,23 @@ namespace
 
             return standard(width, height, sampler, ray_tracer);
         }
+
+        Renderer parallel(unsigned width, unsigned height, Sampler sampler, RayTracer ray_tracer) const
+        {
+            return raytracer::renderers::standard(width, height, sampler, ray_tracer, tasks::schedulers::parallel());
+        }
+
+        Renderer parallel_by_map(const std::map<std::string, Boxed_Value>& argument_map) const
+        {
+            START_ARGUMENTS(argument_map);
+            ARGUMENT(unsigned, width);
+            ARGUMENT(unsigned, height);
+            ARGUMENT(Sampler, sampler);
+            ARGUMENT(RayTracer, ray_tracer);
+            END_ARGUMENTS();
+
+            return parallel(width, height, sampler, ray_tracer);
+        }
     };
 }
 
@@ -48,6 +65,8 @@ ModulePtr raytracer::scripting::_private_::create_rendering_module()
 #   define BIND_AS(INTERNAL, EXTERNAL) module->add(fun(&RendererLibrary::INTERNAL), #EXTERNAL)
     BIND_AS(standard, standard);
     BIND_AS(standard_by_map, standard);
+    BIND_AS(parallel, parallel);
+    BIND_AS(parallel_by_map, parallel);
 #   undef BIND_AS
 
     return module;

@@ -5,19 +5,19 @@
             "first-name": "Thijs",
             "last-name": "Vlaeyen",
             "student-id": "R0747344",
-            "is-done": "no"
+            "is-done": "yes"
         },
         {
             "first-name": "Noa",
             "last-name": "Andries",
             "student-id": "R0748973",
-            "is-done": "no"
+            "is-done": "yes"
         },
         {
             "first-name": "Kasper",
             "last-name": "Vanderhulst",
             "student-id": "R0749062",
-            "is-done": "no"
+            "is-done": "yes"
         }
     ]
 }
