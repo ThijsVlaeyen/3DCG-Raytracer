@@ -1,0 +1,11 @@
+C:\Users\thijs\Downloads\3dcg-raytracer-1920-djd\mesh\jaro\MeshBuilder\bin\Debug\netcoreapp3.0\MeshBuilder.exe
+C:\Users\thijs\Downloads\3dcg-raytracer-1920-djd\mesh\jaro\MeshBuilder\bin\Debug\netcoreapp3.0\MeshBuilder.deps.json
+C:\Users\thijs\Downloads\3dcg-raytracer-1920-djd\mesh\jaro\MeshBuilder\bin\Debug\netcoreapp3.0\MeshBuilder.runtimeconfig.json
+C:\Users\thijs\Downloads\3dcg-raytracer-1920-djd\mesh\jaro\MeshBuilder\bin\Debug\netcoreapp3.0\MeshBuilder.runtimeconfig.dev.json
+C:\Users\thijs\Downloads\3dcg-raytracer-1920-djd\mesh\jaro\MeshBuilder\bin\Debug\netcoreapp3.0\MeshBuilder.dll
+C:\Users\thijs\Downloads\3dcg-raytracer-1920-djd\mesh\jaro\MeshBuilder\bin\Debug\netcoreapp3.0\MeshBuilder.pdb
+C:\Users\thijs\Downloads\3dcg-raytracer-1920-djd\mesh\jaro\MeshBuilder\obj\Debug\netcoreapp3.0\MeshBuilder.csprojAssemblyReference.cache
+C:\Users\thijs\Downloads\3dcg-raytracer-1920-djd\mesh\jaro\MeshBuilder\obj\Debug\netcoreapp3.0\MeshBuilder.AssemblyInfoInputs.cache
+C:\Users\thijs\Downloads\3dcg-raytracer-1920-djd\mesh\jaro\MeshBuilder\obj\Debug\netcoreapp3.0\MeshBuilder.AssemblyInfo.cs
+C:\Users\thijs\Downloads\3dcg-raytracer-1920-djd\mesh\jaro\MeshBuilder\obj\Debug\netcoreapp3.0\MeshBuilder.dll
+C:\Users\thijs\Downloads\3dcg-raytracer-1920-djd\mesh\jaro\MeshBuilder\obj\Debug\netcoreapp3.0\MeshBuilder.pdb

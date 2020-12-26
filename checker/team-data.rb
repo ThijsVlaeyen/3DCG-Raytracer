@@ -17,11 +17,13 @@ team_member 'ThijsVlaeyen' do
   extension BoundingBox
   extension EasingLibrary
   extension PointAnimation
+  extension MaterialGrid3d
 
   #Lvl 3
   extension RayTracerV5
   extension SpotLight
   extension Quadratic
+  extension ParallelScheduler
 
   #Lvl 4
   extension RayTracerV6
@@ -74,8 +76,8 @@ team_member 'Noa' do
   extension JitteredSampler
   extension HalfJitteredSampler
   extension CylinderAlongY
+  
   #Lvl 3
-  extension ParallelScheduler
   extension MaterialTransformer3D
   extension MaterialTranslate3D
   extension NRooksSampler

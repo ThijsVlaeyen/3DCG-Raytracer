@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\jarod\.Rider2019.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\jarod\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_MeshBuilder.-1805965934.00" t="ExcludeRecursive" />
+    <e p="E:\GitHub\3dcg-raytracer-1920-djd\mesh\jaro\MeshBuilder" t="IncludeRecursive">
+      <e p="bin" t="ExcludeRecursive" />
+      <e p="IO" t="Include">
+        <e p="HierarchyWriter.cs" t="Include" />
+        <e p="MeshReader.cs" t="Include" />
+      </e>
+      <e p="MeshBuilder.csproj" t="IncludeRecursive" />
+      <e p="MeshBuilder.sln" t="IncludeFlat" />
+      <e p="Model" t="Include">
+        <e p="BoundingBox.cs" t="Include" />
+        <e p="Triangle.cs" t="Include" />
+        <e p="Vertex.cs" t="Include" />
+      </e>
+      <e p="obj" t="ExcludeRecursive">
+        <e p="Release" t="Include">
+          <e p="netcoreapp3.0" t="Include">
+            <e p="MeshBuilder.AssemblyInfo.cs" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="Program.cs" t="Include" />
+    </e>
+  </component>
+</project>

@@ -1,0 +1,11 @@
+E:\GitHub\3dcg-raytracer-1920-djd\mesh\jaro\MeshBuilder\bin\Release\netcoreapp3.0\MeshBuilder.exe
+E:\GitHub\3dcg-raytracer-1920-djd\mesh\jaro\MeshBuilder\bin\Release\netcoreapp3.0\MeshBuilder.deps.json
+E:\GitHub\3dcg-raytracer-1920-djd\mesh\jaro\MeshBuilder\bin\Release\netcoreapp3.0\MeshBuilder.runtimeconfig.json
+E:\GitHub\3dcg-raytracer-1920-djd\mesh\jaro\MeshBuilder\bin\Release\netcoreapp3.0\MeshBuilder.runtimeconfig.dev.json
+E:\GitHub\3dcg-raytracer-1920-djd\mesh\jaro\MeshBuilder\bin\Release\netcoreapp3.0\MeshBuilder.dll
+E:\GitHub\3dcg-raytracer-1920-djd\mesh\jaro\MeshBuilder\bin\Release\netcoreapp3.0\MeshBuilder.pdb
+E:\GitHub\3dcg-raytracer-1920-djd\mesh\jaro\MeshBuilder\obj\Release\netcoreapp3.0\MeshBuilder.csprojAssemblyReference.cache
+E:\GitHub\3dcg-raytracer-1920-djd\mesh\jaro\MeshBuilder\obj\Release\netcoreapp3.0\MeshBuilder.AssemblyInfoInputs.cache
+E:\GitHub\3dcg-raytracer-1920-djd\mesh\jaro\MeshBuilder\obj\Release\netcoreapp3.0\MeshBuilder.AssemblyInfo.cs
+E:\GitHub\3dcg-raytracer-1920-djd\mesh\jaro\MeshBuilder\obj\Release\netcoreapp3.0\MeshBuilder.dll
+E:\GitHub\3dcg-raytracer-1920-djd\mesh\jaro\MeshBuilder\obj\Release\netcoreapp3.0\MeshBuilder.pdb

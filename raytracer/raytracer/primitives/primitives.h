@@ -14,4 +14,5 @@
 #include "primitives/cube-primitive.h"
 #include "primitives/cone-primitive.h"
 #include "primitives/mesh-primitive-noa.h"
+#include "primitives/mesh-primitive-thijs.h"
 #include "primitives/mesh-primitive.h"
