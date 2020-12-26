@@ -82,6 +82,7 @@ team_member 'Noa' do
   extension MaterialTranslate3D
   extension NRooksSampler
   extension MultijitteredSampler
+  extension ParallelScheduler
   #Lvl 4
   extension Intersection
   extension FisheyeCamera
