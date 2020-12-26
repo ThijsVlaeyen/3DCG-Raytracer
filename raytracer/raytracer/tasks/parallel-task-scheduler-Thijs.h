@@ -10,6 +10,6 @@ namespace tasks
 		/// <summary>
 		/// Creates a scheduler that performs each task in parallel.
 		/// </summary>
-		TaskScheduler parallel();
+		TaskScheduler parallel_Thijs();
 	}
 }
