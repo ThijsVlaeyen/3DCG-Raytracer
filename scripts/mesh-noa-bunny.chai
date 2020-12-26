@@ -26,11 +26,11 @@ def scene_at(now)
   create_scene(camera, root, lights)
 }
 
-var raytracer   = Raytracers.v6()
+var raytracer   = Raytracers.v2()
 
-var renderer    = Renderers.standard( [ "width": 400,
-                                       "height": 400,
-                                       "sampler": Samplers.multijittered(1),
+var renderer    = Renderers.standard( [ "width": 350,
+                                       "height": 350,
+                                       "sampler": Samplers.single(),
                                        "ray_tracer": raytracer ] )
 
 pipeline( scene_animation(scene_at, seconds(5)),
