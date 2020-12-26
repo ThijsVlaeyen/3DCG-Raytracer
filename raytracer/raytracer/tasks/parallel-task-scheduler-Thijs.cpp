@@ -1,4 +1,4 @@
-#include "tasks/parallel-task-scheduler.h"
+#include "tasks/parallel-task-scheduler-Thijs.h"
 #include <thread>
 #include <mutex>
 #include <algorithm>
@@ -61,7 +61,7 @@ namespace
 	};
 }
 
-TaskScheduler tasks::schedulers::parallel()
+TaskScheduler tasks::schedulers::parallel_Thijs()
 {
 	return TaskScheduler(std::make_shared<ParallelTaskScheduler>());
 }
